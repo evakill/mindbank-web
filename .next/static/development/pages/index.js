@@ -347,7 +347,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/img/icon.png",
+        src: "/static/img/favicon.io",
         alt: "The MindBank",
         width: "45",
         height: "45",
