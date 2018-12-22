@@ -33,7 +33,7 @@ class Header extends React.Component {
             onMouseEnter={() => this.setState({ hovering: true })}
             onMouseLeave={() => this.setState({ hovering: false })}>
           <img
-            src="/static/img/favicon.ico"
+            src="/static/img/icon.png"
             alt="The MindBank"
             width="45"
             height="45"/>
