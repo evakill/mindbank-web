@@ -1,3 +1,5 @@
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -8,11 +10,11 @@ class Contact extends React.Component {
   render() {
     return(
       <div>
-      <div className="hero" style={{padding: '4rem', backgroundColor: "#e2e2e2"}}>
-        <p className="title is-1" style={{color: "#434343"}}>Contact Us</p>
+      <Header/>
+      <div className="container is-flex" style={{flexDirection: "column", padding: "4rem", width: "70%"}}>
+        <p className="title is-1" style={{color: "#434343", paddingTop: "4rem"}}>Contact Us</p>
         <p className="subtitle is-6"> We'd love to hear from you. Complete this form with any general questions, concerns, or feedback you have for us.
         We'll be sure to respond promptly. </p>
-          <div className="container" style={{width: "80%", padding: 20}}>
             <div className="field">
               <label className="label has-text-left">Name</label>
               <div className="control">
@@ -41,13 +43,13 @@ class Contact extends React.Component {
                   Add me to the MindBank ListServ.
                 </label>
               </div>
-            </div>
 
-            <div className="control">
-              <button className="button ">Submit</button>
+            <div className="control is-flex" style={{flexDirection: "column"}}>
+              <button className="button" style={{width: 100, backgroundColor: "#b9b9b9", color: "#fff", borderWidth: 0, alignSelf: "flex-end"}}>Submit</button>
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

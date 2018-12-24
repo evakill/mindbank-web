@@ -50,17 +50,23 @@ class Header extends React.Component {
         <div className="navbar-menu" id="navMenu">
           <div className="navbar-start"></div>
           <div className="navbar-end">
-            <a className="navbar-item" href="/team">
-              About Us
+            <a className="navbar-item" href="/about">
+              <b>About Us</b>
             </a>
-            <a className="navbar-item" href="/products">
-              For Clients
+            <a className="navbar-item" href="/contact">
+              <b>Team</b>
             </a>
-            <a className="navbar-item" href="/guides">
-              For Consultants
+            <a className="navbar-item" href="/contact">
+              <b>Projects</b>
             </a>
-            <a className="navbar-item" href="/documentation">
-              Contact
+            <a className="navbar-item" href="/clients">
+              <b>For Clients</b>
+            </a>
+            <a className="navbar-item" href="/consultants">
+              <b>For Consultants</b>
+            </a>
+            <a className="navbar-item" href="/contact">
+              <b>Contact</b>
             </a>
           </div>
         </div>
