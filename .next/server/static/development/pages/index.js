@@ -213,7 +213,7 @@ var Footer = function Footer(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    class: "icon",
+    className: "icon",
     style: {
       color: '#00275a'
     },
@@ -223,14 +223,14 @@ var Footer = function Footer(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    class: "fab fa-facebook-square",
+    className: "fab fa-facebook-square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    class: "icon",
+    className: "icon",
     style: {
       color: '#00275a'
     },
@@ -240,14 +240,14 @@ var Footer = function Footer(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    class: "fa fa-envelope-square",
+    className: "fa fa-envelope-square",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    class: "icon",
+    className: "icon",
     style: {
       color: '#00275a'
     },
@@ -257,7 +257,7 @@ var Footer = function Footer(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    class: "fab fa-linkedin",
+    className: "fab fa-linkedin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
@@ -552,18 +552,14 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pose */ "react-pose");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_konva__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-konva */ "react-konva");
-/* harmony import */ var react_konva__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_konva__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-facebook */ "react-facebook");
-/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_facebook__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-facebook */ "react-facebook");
+/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_facebook__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/killenberge/mindbank-web/pages/index.js";
 
 
@@ -588,14 +584,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Konva = __webpack_require__(/*! konva */ "konva");
 
 
-
-
-
-
-var Square = react_pose__WEBPACK_IMPORTED_MODULE_2___default.a.div({
+var Square = react_pose__WEBPACK_IMPORTED_MODULE_1___default.a.div({
   idle: {
     scale: 1
   },
@@ -608,43 +599,43 @@ var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Banner, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoBox, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 16
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Links, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(News, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 18
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 19
     },
     __self: this
   }));
@@ -654,119 +645,105 @@ var Banner = function Banner() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hero is-primary is-medium",
+    className: "hero is-primary is-small",
     style: {
       backgroundImage: "url(/static/img/consulting.jpg)",
       backgroundColor: "#00396D",
-      opacity: "90%"
+      opacity: "90%",
+      height: "35rem",
+      padding: "1rem"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hero-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "columns",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column is-half",
+    style: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      height: 100
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/img/fullLogo.png",
+    width: "90%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column is-half",
+    style: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
+    },
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "column is-half has-text-center",
     style: {
-      display: "flex",
-      alignItems: "flex-end",
-      paddingBottom: 50,
-      justifyContent: "center"
+      height: 100
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/logoTransparentBlue.png",
-    width: "200",
-    height: "200",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "title has-text-left",
-    style: {
-      fontSize: 80,
-      alignSelf: "left"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, "The MindBank"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "subtitle is-size-4 has-text-gray has-text-left",
-    style: {
-      alignSelf: "flex-start"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, "Consulting for campus environments."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "column is-half",
-    style: {
-      display: "flex",
-      justifyContent: "flex-end",
-      flexDirection: "column"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "is-size-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 35
     },
     __self: this
   }, "We are a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 35
     },
     __self: this
   }, "student consulting group"), " at the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -775,32 +752,32 @@ var Banner = function Banner() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 35
     },
     __self: this
   }, "University of Pennsylvania"), ". "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "is-size-3",
+    className: "is-size-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 36
     },
     __self: this
   }, " We work with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 36
     },
     __self: this
   }, "student-led startups"), ", ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 36
     },
     __self: this
   }, "campus organizations"), ", and ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 36
     },
     __self: this
   }, "established companies"), " focused on the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -809,7 +786,7 @@ var Banner = function Banner() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 36
     },
     __self: this
   }, "collegiate environment."), " ")))))));
@@ -817,17 +794,17 @@ var Banner = function Banner() {
 
 var InfoBox = function InfoBox() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "columns",
+    className: "columns",
     style: {
       padding: "5rem"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "column",
+    className: "column",
     style: {
       marginBottom: 0,
       border: "3px solid #DB504A",
@@ -838,48 +815,67 @@ var InfoBox = function InfoBox() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "is-size-1 title",
+    className: "is-size-1 title",
     style: {
       color: "#DB504A"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 49
     },
     __self: this
   }, "Who We Are"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "is-size-5 has-text-grey",
+    className: "is-size-5",
+    style: {
+      color: "#434343"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 50
     },
     __self: this
   }, "The MindBank is a bright, diverse group of Penn students. We are young women and men studying liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving and a desire to learn and engage."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "button has-text-white is-rounded",
+    className: "button has-text-white is-rounded",
     style: {
       marginRight: 30,
-      backgroundColor: "#b3b3b3",
+      backgroundColor: "#b9b9b9",
       borderWidth: 0,
       alignSelf: "flex-end"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 55
     },
     __self: this
-  }, "Meet the team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "column is-1",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 56
+    },
+    __self: this
+  }, "Meet the team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-angle-double-right",
+    style: {
+      padding: "3px 4px"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column is-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "column",
+    className: "column",
     style: {
       marginBottom: 0,
       border: "3px solid #DB504A",
@@ -890,40 +886,59 @@ var InfoBox = function InfoBox() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "is-size-1 title",
+    className: "is-size-1 title",
     style: {
       color: "#DB504A"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, "What We Do"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "is-size-5",
+    style: {
+      color: "#434343"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }, "The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs and problems then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "button has-text-white is-rounded",
+    style: {
+      marginRight: 30,
+      backgroundColor: "#b9b9b9",
+      borderWidth: 0,
+      alignSelf: "flex-end"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, "See past projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-angle-double-right",
+    style: {
+      padding: "3px 4px"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
     },
     __self: this
-  }, "What We Do"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "is-size-5 has-text-grey",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, "The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs and problems then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "button has-text-white is-rounded",
-    style: {
-      marginRight: 30,
-      backgroundColor: "#b3b3b3",
-      borderWidth: 0,
-      alignSelf: "flex-end"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }, "See past projects")));
+  }))));
 };
 
 var Links =
@@ -952,34 +967,35 @@ function (_React$Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "hero",
+        className: "hero",
         style: {
-          backgroundColor: "#00396d",
-          padding: '5rem'
+          padding: '5rem',
+          backgroundColor: "#e2e2e2"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 90
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "columns",
+        className: "columns",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "column",
+        className: "column",
         style: {
           backgroundColor: "#fff",
           borderRadius: 10,
           margin: 10,
-          padding: 30
+          padding: 30,
+          boxShadow: "5px 5px 1px grey"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -996,78 +1012,88 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "has-text-centered",
+        className: "has-text-centered",
         style: {
           paddingTop: 25
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "icon",
+        style: {
+          color: "#6688a7"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-4x fa-users",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content has-text-centered",
+        style: {
+          padding: 5
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        class: "icon",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title is-2",
         style: {
-          color: "#6688a7"
+          color: "#434343"
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 103
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        class: "fas fa-4x fa-users",
+      }, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitle is-4",
+        style: {
+          color: "#686868"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 104
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "content has-text-centered",
-        style: {
-          padding: 5
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 107
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "title is-2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 108
-        },
-        __self: this
-      }, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "subtitle is-4",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 109
-        },
-        __self: this
       }, "Learn more."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "has-text-grey is-size-6",
+        className: "has-text-grey is-size-6",
+        style: {
+          color: "#434343"
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 105
         },
         __self: this
       }, " Read about the history, mission and vision of The MindBank.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "column",
+        className: "column",
         style: {
           backgroundColor: "#fff",
           margin: 10,
           borderRadius: 10,
-          padding: 30
+          padding: 30,
+          boxShadow: "5px 5px 1px grey"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -1084,75 +1110,85 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 110
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "has-text-centered",
+        className: "has-text-centered",
         style: {
           paddingTop: 25
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        class: "icon",
+        className: "icon",
         style: {
           color: "#6688a7"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-4x fa-handshake",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content has-text-centered",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title is-2",
+        style: {
+          color: "#434343"
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 120
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        class: "fas fa-4x fa-handshake",
+      }, "For Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitle is-4",
+        style: {
+          color: "#686868"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 121
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "content has-text-centered",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 124
+      }, "Work with us."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "has-text-grey is-size-6",
+        style: {
+          color: "#434343"
         },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "title is-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
-        },
-        __self: this
-      }, "For Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "subtitle is-4",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 126
-        },
-        __self: this
-      }, "Collaborate with us."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "has-text-grey is-size-6",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 122
         },
         __self: this
       }, " We work with companies, businesses, and start-ups which target the campus environment.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "column",
+        className: "column",
         style: {
           backgroundColor: "#fff",
           margin: 10,
           borderRadius: 10,
-          padding: 30
+          padding: 30,
+          boxShadow: "5px 5px 1px grey"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 126
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -1169,62 +1205,71 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 127
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "has-text-centered",
+        className: "has-text-centered",
         style: {
           paddingTop: 25
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 131
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        class: "icon",
+        className: "icon",
         style: {
           color: "#6688a7"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-4x fa-user-tie",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content has-text-centered",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title is-2",
+        style: {
+          color: "#434343"
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 137
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        class: "fas fa-4x fa-user-tie",
+      }, "For Consultants"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "subtitle is-4",
+        style: {
+          color: "#686868"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 138
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "content has-text-centered",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 141
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "title is-2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 142
-        },
-        __self: this
-      }, "For Consultants"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "subtitle is-4",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 143
-        },
-        __self: this
       }, "Get involved. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "has-text-grey is-size-6",
+        className: "has-text-grey is-size-6",
+        style: {
+          color: "#434343"
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 139
         },
         __self: this
       }, " We recruit bright, driven, and creative Penn students to join our group."))))));
@@ -1232,36 +1277,12 @@ function (_React$Component) {
   }]);
 
   return Links;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); // <div class="tile is-child notification has-text-white has-text-left" style={{backgroundColor: "#00396d", borderRadius: 4}}>
-//   <p class="title is-size-2" style={{color: "#e5e5e5"}}>Our Value</p>
-//   <p style={{color: "#e5e5e5"}}> We deliver value to our clients by leveraging our reach across Penn’s student communities and uncovering insights only available to campus insiders.</p>
-// </div>
-//
-//   <div class="tile is-child notification has-text-white has-text-right" style={{backgroundColor: "#00396d", borderRadius: 4}}>
-//     <p class="title is-size-2" style={{color: "#e5e5e5"}}>Experiential Learning</p>
-//     <p style={{color: "#e5e5e5"}}> Students are best motivated when engaged with real-life challenges and love seeing the
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); //We deliver value to our clients by leveraging our reach across Penn’s student communities and uncovering insights only available to campus insiders.</p>
+//Students are best motivated when engaged with real-life challenges and love seeing the
 //         impact of their work. So why not immerse them directly into situations with the potential
 //         for real impact?
 //         The MindBank was formed to give students the opportunity to practice teamwork and
-//         develop their problem-solving skills. </p>
-//   </div>
-// <div class="column" style={{backgroundColor: "#fff", margin: 10, borderRadius: 10}}>
-//   <Square
-//     pose={this.state.hContact ? "hovered" : "idle"}
-//     onMouseEnter={() => this.setState({ hContact: true })}
-//     onMouseLeave={() => this.setState({ hContact: false })}>
-//       <div class="has-text-centered" style={{paddingTop:25}}>
-//         <span class="icon" style={{color: "#fff"}}>
-//           <i class="fas fa-4x fa-envelope"></i>
-//         </span>
-//       </div>
-//       <div class="content has-text-centered">
-//         <p class="title is-size-2">Contact</p>
-//         <p class="subtitle">Please reach out with any inquiries.</p>
-//         <p class="subtitle"></p>
-//       </div>
-//   </Square>
-// </div>
+//         develop their problem-solving skills.
 
 
 var News =
@@ -1286,34 +1307,34 @@ function (_React$Component2) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "hero",
+        className: "hero",
         style: {
           padding: "5rem"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 171
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "title is-size-1",
+        className: "title is-size-1",
         style: {
           color: "#DB504A"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 172
         },
         __self: this
       }, "News"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "subtitle is-6",
+        className: "subtitle is-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 201
+          lineNumber: 173
         },
         __self: this
       }, " Connect with us on FaceBook to follow our latest updates and content. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "container",
+        className: "container",
         style: {
           display: "flex",
           flexDirection: "row",
@@ -1322,23 +1343,23 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 202
+          lineNumber: 174
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_facebook__WEBPACK_IMPORTED_MODULE_6__["FacebookProvider"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_facebook__WEBPACK_IMPORTED_MODULE_4__["FacebookProvider"], {
         appId: "1730719700366447",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 203
+          lineNumber: 175
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_facebook__WEBPACK_IMPORTED_MODULE_6__["Page"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_facebook__WEBPACK_IMPORTED_MODULE_4__["Page"], {
         href: "https://www.facebook.com/pennmindbank/",
         tabs: "timeline",
         width: "1000",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 204
+          lineNumber: 176
         },
         __self: this
       }))));
@@ -1346,210 +1367,6 @@ function (_React$Component2) {
   }]);
 
   return News;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); //
-// <div style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
-//   <Button style={{color: "#DB504A", borderWidth: 0}} onClick={(e)=>this.setState({ index: this.state.index + 1 })}>
-//     <span class="icon is-small">
-//       <i class="fas fa-chevron-right"></i>
-//     </span>
-//   </Button>
-// </div>
-
-
-var Contact =
-/*#__PURE__*/
-function (_React$Component3) {
-  _inherits(Contact, _React$Component3);
-
-  function Contact(props) {
-    _classCallCheck(this, Contact);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Contact).call(this, props));
-  }
-
-  _createClass(Contact, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 227
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "hero",
-        style: {
-          padding: '4rem'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 228
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "title is-1",
-        style: {
-          color: "#DB504A"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 229
-        },
-        __self: this
-      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        class: "subtitle is-6",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 230
-        },
-        __self: this
-      }, " We'd love to hear from you. Complete this form with any general questions, concerns, or feedback you have for us. We'll be sure to respond promptly. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "container",
-        style: {
-          width: "80%",
-          padding: 20
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 232
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "field",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 233
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        class: "label has-text-left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 234
-        },
-        __self: this
-      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 235
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        class: "input",
-        type: "text",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 236
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "field",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 240
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        class: "label has-text-left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 241
-        },
-        __self: this
-      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 242
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        class: "input",
-        type: "email",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 243
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "field",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 247
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        class: "label has-text-left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 248
-        },
-        __self: this
-      }, "Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 249
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-        class: "textarea",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 250
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "field",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 254
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 255
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "checkbox",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 256
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        class: "checkbox",
-        style: {
-          padding: 10
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 257
-        },
-        __self: this
-      }, "Add me to the MindBank ListServ."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 263
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        class: "button ",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 264
-        },
-        __self: this
-      }, "Submit")))));
-    }
-  }]);
-
-  return Contact;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -1565,17 +1382,6 @@ function (_React$Component3) {
 
 module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "konva":
-/*!************************!*\
-  !*** external "konva" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("konva");
 
 /***/ }),
 
@@ -1620,17 +1426,6 @@ module.exports = require("react-bootstrap");
 /***/ (function(module, exports) {
 
 module.exports = require("react-facebook");
-
-/***/ }),
-
-/***/ "react-konva":
-/*!******************************!*\
-  !*** external "react-konva" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-konva");
 
 /***/ }),
 

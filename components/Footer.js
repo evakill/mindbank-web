@@ -12,14 +12,14 @@ const Footer = (props) => (
           <a style={{paddingLeft: 10, paddingRight: 10}}>Contact</a>
         </div>
         <div className="container" style={{display:"flex", justifyContent:"center"}}>
-          <span class="icon" style={{color: '#00275a'}}>
-            <i class="fab fa-facebook-square"></i>
+          <span className="icon" style={{color: '#00275a'}}>
+            <i className="fab fa-facebook-square"></i>
           </span>
-          <span class="icon" style={{color: '#00275a'}}>
-            <i class="fa fa-envelope-square"></i>
+          <span className="icon" style={{color: '#00275a'}}>
+            <i className="fa fa-envelope-square"></i>
           </span>
-          <span class="icon" style={{color: '#00275a'}}>
-            <i class="fab fa-linkedin"></i>
+          <span className="icon" style={{color: '#00275a'}}>
+            <i className="fab fa-linkedin"></i>
           </span>
         </div>
       </div>
