@@ -3,16 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { FacebookProvider, EmbeddedPost, Page } from 'react-facebook';
 import { Button } from 'react-bootstrap'
-const colors = {
-  b1: "#00396D",
-  b2: "#00396D",
-  b3: "#33618A",
-  b4: "#6688A7",
-  r1: "#DB504A",
-  g1: "#434343",
-  g2: "#B9B9B9",
-  g3: "#E5E5E5",
-}
+import colors from '../colors.js'
 
 const Square = posed.div({
   idle: { scale: 1 },
@@ -51,36 +42,58 @@ const Banner = () => (
 );
 
 
-const InfoBox = () => (
-  <div className="columns" style={{padding: "5rem"}}>
-    <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
-      <p className="is-size-1 title" style={{color: colors.r1}}>Who We Are</p>
-      <p className="is-size-5" style={{color: colors.g1}}>
-      The MindBank is a bright, diverse group of Penn students. We are young women and men studying
-      liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different
-      political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving
-      and a desire to learn and engage.</p>
-      <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: "#b9b9b9", borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
-        <b>Meet the team</b>
-        <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
-      </a>
-    </div>
-    <div className="column is-1">
-    </div>
-    <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
-      <p className="is-size-1 title" style={{color: colors.r1}}>What We Do</p>
-      <p className="is-size-5" style={{color: colors.g1}}>
-      The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
-      and iterative project cycle, we identify business needs and problems then use our expertise to propose original and informed
-      advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions.
-      </p>
-      <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: colors.g2, borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
-        <b>See past projects</b>
-        <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
-      </a>
-    </div>
-  </div>
-);
+class InfoBox extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      hProjects: false,
+      hTeam: false,
+    }
+  }
+
+  render() {
+    return(
+      <div className="columns" style={{padding: "5rem"}}>
+        <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
+          <p className="is-size-1 title" style={{color: colors.r1}}>Who We Are</p>
+          <p className="is-size-5" style={{color: colors.g1}}>
+          The MindBank is a bright, diverse group of Penn students. We are young women and men studying
+          liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different
+          political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving
+          and a desire to learn and engage.</p>
+          <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: "#b9b9b9", borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
+          <Square
+            pose={this.state.hTeam ? "hovered" : "idle"}
+            onMouseEnter={() => this.setState({ hTeam: true })}
+            onMouseLeave={() => this.setState({ hTeam: false })}>
+              <b>Meet the team</b>
+              <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
+            </Square>
+          </a>
+        </div>
+        <div className="column is-1">
+        </div>
+        <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
+          <p className="is-size-1 title" style={{color: colors.r1}}>What We Do</p>
+          <p className="is-size-5" style={{color: colors.g1}}>
+          The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
+          and iterative project cycle, we identify business needs and problems then use our expertise to propose original and informed
+          advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions.
+          </p>
+          <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: colors.g2, borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
+          <Square
+            pose={this.state.hProjects ? "hovered" : "idle"}
+            onMouseEnter={() => this.setState({ hProjects: true })}
+            onMouseLeave={() => this.setState({ hProjects: false })}>
+              <b>See past projects</b>
+              <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
+            </Square>
+          </a>
+        </div>
+      </div>
+    );
+  }
+}
 
 class Links extends React.Component {
   constructor(props) {
@@ -110,7 +123,7 @@ class Links extends React.Component {
                 <div className="content has-text-centered" style={{padding: 5}}>
                   <p className="title is-2" style={{color: colors.g1}}>About Us</p>
                   <p className="subtitle is-4" style={{color: "#686868"}}>Learn more.</p>
-                  <p className="has-text-grey is-size-6" style={{color: colors.g1}}> Read about the history, mission and vision of The MindBank.</p>
+                  <p className="has-text-grey is-size-6" style={{color: colors.g1}}>  Read about our history, mission, and vision, meet our talented members, and learn about our past projects.</p>
                 </div>
             </Square>
           </div>

@@ -1,9 +1,11 @@
+import colors from '../colors.js'
+
 const Footer = (props) => (
   <section>
-    <div className="hero is-small" style={{backgroundColor: '#e5e5e5'}}>
+    <div className="hero is-small" style={{backgroundColor: colors.g3}}>
       <div className="hero-body">
         <div className="container has-text-centered" style={{display: "flex", justifyContent: "center", alignItems: "bottom"}}>
-          <p className="title is-size-5" style={{color: '#00275a'}}> The MindBank </p>
+          <p className="title is-size-5" style={{color: colors.b1}}> The MindBank </p>
         </div>
         <div className="container has-text-white" style={{display:"flex", justifyContent:"center"}}>
           <a style={{paddingLeft: 10}}>About Us</a>
@@ -12,13 +14,13 @@ const Footer = (props) => (
           <a style={{paddingLeft: 10, paddingRight: 10}}>Contact</a>
         </div>
         <div className="container" style={{display:"flex", justifyContent:"center"}}>
-          <span className="icon" style={{color: '#00275a'}}>
+          <span className="icon" style={{color: colors.b1}}>
             <i className="fab fa-facebook-square"></i>
           </span>
-          <span className="icon" style={{color: '#00275a'}}>
+          <span className="icon" style={{color: colors.b1}}>
             <i className="fa fa-envelope-square"></i>
           </span>
-          <span className="icon" style={{color: '#00275a'}}>
+          <span className="icon" style={{color: colors.b1}}>
             <i className="fab fa-linkedin"></i>
           </span>
         </div>

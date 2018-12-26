@@ -1,5 +1,6 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import colors from '../colors.js'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Contact extends React.Component {
       <div>
       <Header/>
       <div className="container is-flex" style={{flexDirection: "column", padding: "4rem", width: "70%"}}>
-        <p className="title is-1" style={{color: "#434343", paddingTop: "4rem"}}>Contact Us</p>
+        <p className="title is-1" style={{color: colors.g1, paddingTop: "4rem"}}>Contact Us</p>
         <p className="subtitle is-6"> We'd love to hear from you. Complete this form with any general questions, concerns, or feedback you have for us.
         We'll be sure to respond promptly. </p>
             <div className="field">
@@ -45,7 +46,7 @@ class Contact extends React.Component {
               </div>
 
             <div className="control is-flex" style={{flexDirection: "column"}}>
-              <button className="button" style={{width: 100, backgroundColor: "#b9b9b9", color: "#fff", borderWidth: 0, alignSelf: "flex-end"}}>Submit</button>
+              <button className="button" style={{width: 100, backgroundColor: colors.g2, color: "white", borderWidth: 0, alignSelf: "flex-end"}}>Submit</button>
             </div>
           </div>
         </div>

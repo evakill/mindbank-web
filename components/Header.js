@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import posed from "react-pose";
+import colors from '../colors.js'
 
 const Square = posed.div({
   idle: { scale: 1 },
@@ -25,8 +26,8 @@ class Header extends React.Component {
     return(
     <div>
       <CSS/>
-      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: "#00275A", height: 80, borderRadius: 0}}>
-        <div className="navbar-brand" style={{color: "#00275A"}}>
+      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: 80, borderRadius: 0}}>
+        <div className="navbar-brand" style={{color: colors.b1}}>
           <div href="/" style={{padding:5}}>
           <Square
             pose={this.state.hovering ? "hovered" : "idle"}
@@ -52,12 +53,6 @@ class Header extends React.Component {
           <div className="navbar-end">
             <a className="navbar-item" href="/about">
               <b>About Us</b>
-            </a>
-            <a className="navbar-item" href="/contact">
-              <b>Team</b>
-            </a>
-            <a className="navbar-item" href="/contact">
-              <b>Projects</b>
             </a>
             <a className="navbar-item" href="/clients">
               <b>For Clients</b>
