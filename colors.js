@@ -7,4 +7,5 @@ export default {
   g1: "#434343",
   g2: "#B9B9B9",
   g3: "#E5E5E5",
+  g4: "#F2F2F2",
 }

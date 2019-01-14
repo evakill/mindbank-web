@@ -6,6 +6,32 @@ const Square = posed.div({
   hovered: { scale: 1 }
 });
 
+const styles = {
+  card: {
+    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
+    padding: 10,
+    display: "flex",
+    flexDirection: "column",
+    backgroundColor: "white",
+    padding: "5%",
+    height: 450,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  cardBack: {
+    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
+    padding: 10,
+    display: "flex",
+    flexDirection: "column",
+    backgroundColor: colors.g4,
+    padding: "5%",
+    height: 450,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+}
+
+
 class Project extends React.Component {
   constructor(props) {
     super(props);
@@ -16,25 +42,27 @@ class Project extends React.Component {
 
   render() {
     return(
-      <div className="columns is-4 is-flex" style={{padding: 20}}>
+      <div className="column is-4 is-flex" style={{padding: 20}}>
         <Square
-          pose={this.state.h? "hovered" : "idle"}
+          pose={this.state.h ? "hovered" : "idle"}
           onMouseEnter={() => this.setState({ h: !this.state.h })}
           onMouseLeave={() => this.setState({ h: !this.state.h })}>
           {(this.state.h ? (
-            <div className="has-text-white has-text-centered is-flex" style={{flexDirection: "column", justifyContent: "center", borderRadius: 15, backgroundColor: colors.b3, padding: 10, height: 400, width: 300}}>
-              <p className="is-size-5"> <b> Project Name </b> </p>
-              <p className="is-size-6"> company desc </p>
-              <p className="is-size-6"> project proposal </p>
-              <p className="is-size-6"> deliverables </p>
-              <p className="is-size-6"> impact </p>
+            <div style={ styles.cardBack}>
+              <p className="is-size-4"> <b> {this.props.name} </b> </p>
+              <p className="is-size-6"> <b>The Company: </b>{this.props.company} </p>
+              <p className="is-size-6"> <b>Their Question: </b>{this.props.proposal} </p>
+              <p className="is-size-6"> <b>Our Answer: </b>{this.props.results} </p>
+              <p className="is-size-6"> {this.props.impact} </p>
             </div>) : (
-            <div className="is-flex" style={{flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: 15, backgroundColor: colors.g3,  height: 400, width: 300, padding: 30}}>
-              <img src='/static/img/crimson.png' style={{width: 200}}/>
+            <div style={styles.card}>
+              <div className="is-flex" style={{alignItems: "center", justifyContent: "center", height: 250, width: 250, padding: 20}}>
+                  <img src={this.props.src}/>
+              </div>
               <br/>
-              <p className="is-size-5"> <b> Project Name </b> </p>
-              <p className="is-size-6"> <em> year </em> </p>
-              <p className="is-size-6"> Project tagline </p>
+              <p className="is-size-4"> <b> {this.props.name} </b> </p>
+              <p className="is-size-6"> <em> {this.props.date} </em> </p>
+              <p className="is-size-5 has-text-centered"> {this.props.tagline} </p>
             </div>))}
         </Square>
       </div>

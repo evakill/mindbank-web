@@ -7,7 +7,7 @@ import colors from '../colors.js'
 
 const Square = posed.div({
   idle: { scale: 1 },
-  hovered: { scale: 1.05 }
+  hovered: { scale: 1.03 }
 });
 
 const Index = () => (
@@ -15,25 +15,68 @@ const Index = () => (
     <Header />
     <Banner />
     <InfoBox />
-    <Links />
-    <News />
     <Footer/>
   </div>
 );
 
+const styles = {
+  card: {
+    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
+    display: "flex",
+    flexDirection: "column",
+    backgroundColor: "white",
+    padding: "5%",
+  },
+  redBar: {
+    minHeight: "100%",
+    minWidth: 8,
+    maxWidth: 8,
+    backgroundColor: colors.r1,
+    color: colors.r1,
+  },
+  redBarHoriz: {
+    minHeight: 10,
+    minWidth: "100%",
+    backgroundColor: colors.r1,
+    color: colors.r1,
+  },
+  cardTitle: {
+    color: colors.b1,
+    fontFamily: "Open Sans",
+    margin: 0
+  },
+  cardText: {
+    color: colors.g1,
+    fontFamily: "Lora",
+    padding: 10
+  },
+  cardButton: {
+    marginTop: 10,
+    marginRight: 20,
+    backgroundColor: "white",
+    color: colors.r1,
+    borderWidth: 0,
+    float: "right",
+    fontFamily: "Open Sans",
+    textDecoration: "none",
+  }
+
+}
+
 const Banner = () => (
   <section>
-    <div className="hero is-primary is-medium" style={{backgroundImage: "url(/static/img/consulting.jpg)", backgroundColor: colors.b1, opacity: "90%", padding: "0 3rem"}}>
-      <div className="hero-body">
-        <div className="columns">
-          <div className="column is-half is-flex" style={{justifyContent: "center", flexDirection:"column"}}>
-            <img src="/static/img/fullLogo.png" width="90%" />
-          </div>
-          <div className="column is-half is-flex" style={{justifyContent: "center", flexDirection:"column"}}>
-            <div className="content">
-              <p className="is-size-3">We are a <b >student consulting group</b> at the <b style={{color: colors.r1}}>University of Pennsylvania</b>. </p>
-              <p className="is-size-3"> We work with <b >student-led startups</b>, <b>campus organizations</b>, and <b>established companies</b> focused on the <b style={{color: colors.r1}}>collegiate environment.</b> </p>
-            </div>
+    <div className="hero is-primary is-small" style={{backgroundColor: colors.g4, padding: "10% 10% 3% 10%", backgroundImage: "url(/static/img/convoOutline2.png)"}}>
+      <div className="hero-body is-flex" style={{flexDirection: "column"}}>
+        <div className="is-flex" style={{flexDirection: "row", justifyContent: "flex-end"}}>
+          <img src="/static/img/fullLogo.png" width="80%" style={{alignSelf: "flex-end", padding: '0 5%', maxHeight: 500}}/>
+          <div style={styles.redBar}></div>
+        </div>
+        <div className="is-flex" style={{flexDirection: "row", paddingTop: "3%"}}>
+          <div style={styles.redBar}></div>
+          <div className="content" style={{paddingLeft: '5%'}}>
+            <b className="is-size-4-desktop is-size-4-tablet is-size-6-mobile" style={{fontFamily: 'Open Sans', color: colors.g1}}>
+            We are a student consulting group at the <b style={{color: colors.r1}} >University of Pennsylvania</b>. <br/>
+            We work with campus organizations, startups, and established companies focused on the <b style={{color: colors.r1}}>campus environment.</b> </b>
           </div>
         </div>
       </div>
@@ -53,44 +96,56 @@ class InfoBox extends React.Component {
 
   render() {
     return(
-      <div className="columns" style={{padding: "5rem"}}>
-        <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
-          <p className="is-size-1 title" style={{color: colors.r1}}>Who We Are</p>
-          <p className="is-size-5" style={{color: colors.g1}}>
-          The MindBank is a bright, diverse group of Penn students. We are young women and men studying
-          liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different
-          political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving
-          and a desire to learn and engage.</p>
-          <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: "#b9b9b9", borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
-          <Square
-            pose={this.state.hTeam ? "hovered" : "idle"}
-            onMouseEnter={() => this.setState({ hTeam: true })}
-            onMouseLeave={() => this.setState({ hTeam: false })}>
-              <b>Meet the team</b>
-              <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
-            </Square>
-          </a>
+      <section>
+        <div className="columns" style={{padding: "10% 0 5% 10%", backgroundImage: "url(/static/img/peopleOutline.png)"}}>
+          <div className="column is-7" style={styles.card}>
+            <b className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.cardTitle}>
+              WHO WE ARE
+              <div style={styles.redBarHoriz}></div>
+            </b>
+            <p className="is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardText}>
+              The Mindbank is a bright, diverse group of Penn students. We are young women and men studying
+              liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different
+              political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving
+              and a desire to learn and engage.
+            </p>
+            <Square
+              pose={this.state.hTeam ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ hTeam: true })}
+              onMouseLeave={() => this.setState({ hTeam: false })}>
+                  <a href="/about" className="button is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardButton}>
+                    <b>Meet the team</b>
+                    <i className="fas fa-angle-double-right" style={{padding: "4px 4px"}}></i>
+                  </a>
+              </Square>
+            </div>
+          <div className="column is-5">
+          </div>
         </div>
-        <div className="column is-1">
+        <div className="columns" style={{padding: "5% 10% 10% 0", backgroundImage: "url(/static/img/handshakeOutline.png)"}}>
+        <div className="column is-5"></div>
+          <div className="column is-7" style={styles.card}>
+            <b className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.cardTitle}>
+              WHAT WE DO
+              <div style={styles.redBarHoriz}></div>
+            </b>
+            <p className="is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardText}>
+              The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
+              and iterative project cycle, we identify business needs then use our expertise to propose original and informed
+              advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions.
+            </p>
+            <Square
+              pose={this.state.hProjects ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ hProjects: true })}
+              onMouseLeave={() => this.setState({ hProjects: false })}>
+                <a href="/about" className="button is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardButton}>
+                  <b>See past projects</b>
+                  <i className="fas fa-angle-double-right" style={{padding: "4px 4px"}}></i>
+                </a>
+              </Square>
+          </div>
         </div>
-        <div className="column" style={{marginBottom: 0, border: "3px solid #DB504A", borderRadius: 15, padding: 30, display: "flex", flexDirection: "column"}}>
-          <p className="is-size-1 title" style={{color: colors.r1}}>What We Do</p>
-          <p className="is-size-5" style={{color: colors.g1}}>
-          The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
-          and iterative project cycle, we identify business needs and problems then use our expertise to propose original and informed
-          advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions.
-          </p>
-          <a className="button has-text-white is-rounded" style={{marginRight: 30, backgroundColor: colors.g2, borderWidth: 0, alignSelf: "flex-end", boxShadow: "3px 3px 1px grey"}}>
-          <Square
-            pose={this.state.hProjects ? "hovered" : "idle"}
-            onMouseEnter={() => this.setState({ hProjects: true })}
-            onMouseLeave={() => this.setState({ hProjects: false })}>
-              <b>See past projects</b>
-              <i className="fas fa-angle-double-right" style={{padding: "3px 4px"}}></i>
-            </Square>
-          </a>
-        </div>
-      </div>
+      </section>
     );
   }
 }
@@ -108,56 +163,62 @@ class Links extends React.Component {
 
   render() {
     return (
-      <div className="hero" style={{padding: '5rem', backgroundColor: colors.g3}}>
+      <div className="hero" style={{padding: '5rem', backgroundColor: colors.g4}}>
         <div className="columns">
-          <div className="column" style={{backgroundColor: "white", borderRadius: 10, margin: 10, padding: 30, boxShadow: "5px 5px 1px grey"}}>
+          <div className="column">
             <Square
               pose={this.state.hAbout ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ hAbout: true })}
               onMouseLeave={() => this.setState({ hAbout: false })}>
-                <div className="has-text-centered" style={{paddingTop:25}}>
-                  <span className="icon" style={{color: colors.b4}}>
-                    <i className="fas fa-4x fa-users"></i>
-                  </span>
-                </div>
-                <div className="content has-text-centered" style={{padding: 5}}>
-                  <p className="title is-2" style={{color: colors.g1}}>About Us</p>
-                  <p className="subtitle is-4" style={{color: "#686868"}}>Learn more.</p>
-                  <p className="has-text-grey is-size-6" style={{color: colors.g1}}>  Read about our history, mission, and vision, meet our talented members, and learn about our past projects.</p>
-                </div>
+              <div style={styles.card}>
+                <a href="/about" style={{textDecoration: "none"}}>
+                  <div className="is-flex has-text-centered" style={{flexDirection: "column", padding: 25, alignItems: "center"}}>
+                    <span className="icon" style={{color: colors.b4, margin: 20}}>
+                      <i className="fas fa-3x fa-users"></i>
+                    </span>
+                    <p className="title is-4" style={{color: colors.g1}}>About Us</p>
+                    <p className="subtitle is-5" style={{color: "#686868"}}>Learn more.</p>
+                    <p className="has-text-grey is-6" style={{color: colors.g1}}>  Read about our history, mission, and vision, meet our talented members, and learn about our past projects.</p>
+                  </div>
+                </a>
+              </div>
             </Square>
           </div>
-          <div className="column" style={{backgroundColor: "white", margin: 10, borderRadius: 10, padding: 30, boxShadow: "5px 5px 1px grey"}}>
+          <div className="column">
             <Square
               pose={this.state.hClient ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ hClient: true })}
               onMouseLeave={() => this.setState({ hClient: false })}>
-                <div className="has-text-centered" style={{paddingTop:25}}>
-                  <span className="icon" style={{color: colors.b4}}>
-                    <i className="fas fa-4x fa-handshake"></i>
-                  </span>
-                </div>
-                <div className="content has-text-centered">
-                <p className="title is-2" style={{color: colors.g1}}>For Clients</p>
-                <p className="subtitle is-4" style={{color: "#686868"}}>Work with us.</p>
-                <p className="has-text-grey is-size-6" style={{color: colors.g1}}> We work with companies, businesses, and start-ups which target the campus environment.</p>
+                <div style={styles.card}>
+                  <a href="/clients" style={{textDecoration: "none"}}>
+                    <div className="is-flex has-text-centered" style={{flexDirection: "column", padding: 25, alignItems: "center"}}>
+                      <span className="icon" style={{color: colors.b4, margin: 20}}>
+                        <i className="fas fa-3x fa-handshake"></i>
+                      </span>
+                      <b className="title is-4 is-5-desktop" style={{color: colors.g1}}>For Clients</b>
+                      <p className="subtitle is-5" style={{color: "#686868"}}>Work with us.</p>
+                      <p className="has-text-grey is-size-6" style={{color: colors.g1}}> We work with companies, businesses, and start-ups which target the campus environment.</p>
+                    </div>
+                  </a>
                 </div>
               </Square>
             </div>
-            <div className="column" style={{backgroundColor: "white", margin: 10, borderRadius: 10, padding: 30, boxShadow: "5px 5px 1px grey"}}>
+            <div className="column">
               <Square
                 pose={this.state.hConsult ? "hovered" : "idle"}
                 onMouseEnter={() => this.setState({ hConsult: true })}
                 onMouseLeave={() => this.setState({ hConsult: false })}>
-                <div className="has-text-centered" style={{paddingTop:25}}>
-                  <span className="icon" style={{color: colors.b4}}>
-                    <i className="fas fa-4x fa-user-tie"></i>
-                  </span>
-                </div>
-                <div className="content has-text-centered">
-                <p className="title is-2" style={{color: colors.g1}}>For Consultants</p>
-                <p className="subtitle is-4" style={{color: "#686868"}}>Get involved. </p>
-                <p className="has-text-grey is-size-6" style={{color: colors.g1}}> We recruit bright, driven, and creative Penn students to join our group.</p>
+                 <div style={styles.card}>
+                  <a href="/consultants" style={{textDecoration: "none"}}>
+                    <div className="is-flex has-text-centered" style={{flexDirection: "column", padding: 25, alignItems: "center"}}>
+                      <span className="icon" style={{color: colors.b4, margin: 20}}>
+                        <i className="fas fa-3x fa-user-tie"></i>
+                      </span>
+                      <b className="title is-4" style={{color: colors.g1}}>For Consultants</b>
+                      <p className="subtitle is-5" style={{color: "#686868"}}>Get involved. </p>
+                      <p className="has-text-grey is-size-6" style={{color: colors.g1}}> We recruit bright, driven, and creative Penn students to join our group.</p>
+                    </div>
+                  </a>
                 </div>
               </Square>
             </div>
@@ -189,15 +250,17 @@ class News extends React.Component {
 
   render() {
     return (
-      <div className="hero" style={{padding: "5rem"}}>
+      <div className="hero" style={{padding: "5rem 20rem"}}>
+        <div style={styles.card}>
           <p className="title is-size-1" style={{color: colors.r1}}>News</p>
-          <p className="subtitle is-6"> Connect with us on FaceBook to follow our latest updates and content. </p>
-          <div className="container" style={{display: "flex", flexDirection: "row", alignitems: "center", justifyContent: "center"}}>
+          <p className="subtitle is-6"> Connect with us on Facebook to follow our latest updates and content. </p>
+          <div style={{alignSelf:"center"}}>
             <FacebookProvider appId="1730719700366447">
-              <Page href="https://www.facebook.com/pennmindbank/" tabs="timeline" width="1000"/>
+              <Page href="https://www.facebook.com/pennmindbank/" tabs="timeline" />
             </FacebookProvider>
           </div>
-        </div>);
+        </div>
+      </div>);
   }
 }
 
