@@ -1,35 +1,11 @@
 import colors from '../colors'
+import styles from '../styles'
 import posed from "react-pose";
 
 const Square = posed.div({
   idle: { scale: 1 },
   hovered: { scale: 1 }
 });
-
-const styles = {
-  card: {
-    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
-    padding: 10,
-    display: "flex",
-    flexDirection: "column",
-    backgroundColor: "white",
-    padding: "5%",
-    height: 450,
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  cardBack: {
-    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
-    padding: 10,
-    display: "flex",
-    flexDirection: "column",
-    backgroundColor: colors.g4,
-    padding: "5%",
-    height: 450,
-    alignItems: "center",
-    justifyContent: "center"
-  },
-}
 
 
 class Project extends React.Component {
@@ -42,31 +18,28 @@ class Project extends React.Component {
 
   render() {
     return(
-      <div className="column is-4 is-flex" style={{padding: 20}}>
-        <Square
-          pose={this.state.h ? "hovered" : "idle"}
-          onMouseEnter={() => this.setState({ h: !this.state.h })}
-          onMouseLeave={() => this.setState({ h: !this.state.h })}>
-          {(this.state.h ? (
-            <div style={ styles.cardBack}>
-              <p className="is-size-4"> <b> {this.props.name} </b> </p>
-              <p className="is-size-6"> <b>The Company: </b>{this.props.company} </p>
-              <p className="is-size-6"> <b>Their Question: </b>{this.props.proposal} </p>
-              <p className="is-size-6"> <b>Our Answer: </b>{this.props.results} </p>
-              <p className="is-size-6"> {this.props.impact} </p>
-            </div>) : (
-            <div style={styles.card}>
-              <div className="is-flex" style={{alignItems: "center", justifyContent: "center", height: 250, width: 250, padding: 20}}>
-                  <img src={this.props.src}/>
-              </div>
-              <br/>
-              <p className="is-size-4"> <b> {this.props.name} </b> </p>
-              <p className="is-size-6"> <em> {this.props.date} </em> </p>
-              <p className="is-size-5 has-text-centered"> {this.props.tagline} </p>
-            </div>))}
-        </Square>
-      </div>
-      );
+      <div style={styles.card}>
+        <div className="columns">
+          <div className="column is-4 is-flex" style={{alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 20}}>
+            <img src={this.props.src} style={{maxHeight: 200}}/>
+            <br/>
+            <p className="is-size-5 has-text-centered" style={styles.accentText}> {this.props.tagline} </p>
+            <p className="is-size-6" style={styles.subtitle}>{this.props.date} </p>
+          </div>
+          <div style={styles.redBar}></div>
+          <div className="column is-8" style={{padding: "3%"}}>
+            <div>
+              <p className="is-size-3" style={styles.header}> <b> {this.props.name} </b> </p> <br/>
+              <p className="is-size-5" style={styles.text}>
+                <b>The Company: </b>{this.props.company} <br/><br/>
+                <b>Their Question: </b>{this.props.proposal} <br/><br/>
+                <b>Our Answer: </b> {this.props.results} <br/><br/>
+                {this.props.impact}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>);
   }
 }
 

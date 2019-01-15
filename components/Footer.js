@@ -33,9 +33,9 @@ class Footer extends React.Component {
         <div className="hero is-small" style={{backgroundColor: colors.g4}}>
           <div className="hero-body">
             <div className="container has-text-centered" style={{display: "flex", justifyContent: "center", alignItems: "bottom"}}>
-              <b className="is-size-5" style={{color: colors.b1, fontFamily: "Montserrat"}}> The Mindbank </b>
+              <b className="is-size-6" style={{color: colors.b1, fontFamily: "Montserrat"}}> THE MINDBANK </b>
             </div>
-            <div className="container" style={{display:"flex", justifyContent:"center", fontFamily: "Open Sans", color: colors.g1}}>
+            <div className="container is-size-7" style={{display:"flex", justifyContent:"center", fontFamily: "Open Sans", color: colors.g1}}>
             <Square
               pose={this.state.h1 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h1: true })}

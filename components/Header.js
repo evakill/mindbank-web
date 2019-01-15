@@ -21,7 +21,7 @@ const styles = {
     margin: 0,
   },
   bar: {
-    color: colors.b1,
+    color: colors.g4,
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
