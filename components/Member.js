@@ -47,8 +47,8 @@ class Member extends React.Component {
                   </div>
                 )
             ))}
-            <p className="is-size-5" style={{color: colors.g1}}> <b> {this.props.member.firstName} </b> </p>
-            <p className="is-size-6 has-text-centered" style={{color: colors.g1, width: 200}}> <em> {this.props.member.role} </em> </p>
+            <p className="is-size-5-desktop is-size-6-tablet is-size-6-mobile" style={{color: colors.g1}}> <b> {this.props.member.firstName} </b> </p>
+            <p className="is-size-6-desktop is-size-7-mobile has-text-centered" style={{color: colors.g1, width: 200}}> <em> {this.props.member.role} </em> </p>
           </div>
         </Square>
       </div>

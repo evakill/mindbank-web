@@ -1,12 +1,22 @@
 import colors from './colors.js';
 
 export default {
+  page: {
+    padding: "0 10% 3% 10%",
+    marginTop: 80,
+  },
+  banner: {
+    backgroundColor: colors.g4,
+    marginTop: 80,
+    padding: "2% 8% 1% 8%"
+  },
   title: {
     color: colors.b1,
     fontFamily: "Open Sans",
     fontStyle: 600,
     margin: 0,
     padding: 0,
+    fontWeight: 600,
   },
   subtitle: {
     color: colors.g1,
@@ -23,39 +33,72 @@ export default {
     fontFamily: "Lora",
   },
   accentText: {
-    backgroundColor: colors.g4,
     color: colors.b1,
-    fontFamily: "Lora",
-    textDecoration: "bold",
-    padding: "5%",
-    margin: "5% 0",
+    fontFamily: "Montserrat",
+    fontWeight: 600
+  },
+  bannerText: {
+    color: colors.g1,
+    fontFamily: "Lato",
+    fontWeight: 600
   },
   card: {
     boxShadow: `0px 0px 15px 7px ${colors.g3}`,
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
-    padding: "5%",
+    padding: "3% 5%",
   },
   cardTitle: {
     color: colors.b1,
     fontFamily: "Open Sans",
-    margin: 0
+    margin: 0,
+    fontWeight: 600
   },
   cardText: {
     color: colors.g1,
     fontFamily: "Lora",
-    padding: 10
+    padding: "3% 3% 0 3%"
   },
   cardButton: {
-    marginTop: 10,
-    marginRight: 20,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "flex-end",
+    padding:0,
     backgroundColor: "white",
     color: colors.r1,
     borderWidth: 0,
     float: "right",
-    fontFamily: "Open Sans",
+    fontFamily: "Lato",
     textDecoration: "none",
+    fontWeight: 600
+  },
+  dropdown: {
+    padding: 0,
+    margin: 0,
+    textDecoration: "none",
+  },
+  bar: {
+    color: colors.g4,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    marginRight: 30,
+    textDecoration: "none",
+  },
+  dropdownItem: {
+    color: colors.b1,
+    textDecoration: "none",
+    padding: 10,
+    fontFamily: "Open Sans",
+    fontWeight: 400
+  },
+  barItem: {
+    textDecoration: "none",
+    padding: 10,
+    color: "white",
+    fontFamily: "Open Sans",
+    fontWeight: 400
   },
   redBar: {
     minHeight: "100%",

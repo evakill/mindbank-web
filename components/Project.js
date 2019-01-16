@@ -23,14 +23,14 @@ class Project extends React.Component {
           <div className="column is-4 is-flex" style={{alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 20}}>
             <img src={this.props.src} style={{maxHeight: 200}}/>
             <br/>
-            <p className="is-size-5 has-text-centered" style={styles.accentText}> {this.props.tagline} </p>
-            <p className="is-size-6" style={styles.subtitle}>{this.props.date} </p>
+            <p className="is-size-5-desktop is-size-6-mobile has-text-centered" style={styles.accentText}> {this.props.tagline} </p>
+            <p className="is-size-6-desktop is-size-7-mobile" style={styles.subtitle}>{this.props.date} </p>
           </div>
           <div style={styles.redBar}></div>
           <div className="column is-8" style={{padding: "3%"}}>
             <div>
-              <p className="is-size-3" style={styles.header}> <b> {this.props.name} </b> </p> <br/>
-              <p className="is-size-5" style={styles.text}>
+              <p className="is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}> <b> {this.props.name} </b> </p> <br/>
+              <p className="is-size-5-desktop is-size-6-mobile" style={styles.text}>
                 <b>The Company: </b>{this.props.company} <br/><br/>
                 <b>Their Question: </b>{this.props.proposal} <br/><br/>
                 <b>Our Answer: </b> {this.props.results} <br/><br/>

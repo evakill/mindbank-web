@@ -10,9 +10,9 @@ const styles = {
   item: {
     textDecoration: "none",
     padding: 10,
-    marginBottom: 10,
     color: colors.g1,
-    fontFamily: "Open Sans"
+    fontFamily: "Open Sans",
+    textDecoration: "none"
   }
 }
 
@@ -24,6 +24,7 @@ class Footer extends React.Component {
       h2: false,
       h3: false,
       h4: false,
+      h5: false,
     }
   }
 
@@ -40,33 +41,31 @@ class Footer extends React.Component {
               pose={this.state.h1 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h1: true })}
               onMouseLeave={() => this.setState({ h1: false })}>
-              <a href="/about" style={styles.item}>
-                <b>ABOUT</b>
-              </a>
+              <a href="/about" style={styles.item}>ABOUT</a>
              </Square>
              <Square
                pose={this.state.h2 ? "hovered" : "idle"}
                onMouseEnter={() => this.setState({ h2: true })}
                onMouseLeave={() => this.setState({ h2: false })}>
-                <a href="/team" style={styles.item}>
-                  <b>TEAM</b>
-                </a>
+                <a href="/team" style={styles.item}>TEAM</a>
              </Square>
              <Square
                pose={this.state.h3 ? "hovered" : "idle"}
                onMouseEnter={() => this.setState({ h3: true })}
                onMouseLeave={() => this.setState({ h3: false })}>
-              <a href="/projects" style={styles.item}>
-                <b>PROJECTS</b>
-              </a>
+              <a href="/projects" style={styles.item}>PROJECTS</a>
             </Square>
             <Square
               pose={this.state.h4 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h4: true })}
               onMouseLeave={() => this.setState({ h4: false })}>
-              <a href="/contact" style={styles.item}>
-                <b>CONTACT</b>
-              </a>
+              <a href="/news" style={styles.item}>NEWS</a>
+           </Square>
+            <Square
+              pose={this.state.h5 ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ h5: true })}
+              onMouseLeave={() => this.setState({ h5: false })}>
+              <a href="/contact" style={styles.item}>CONTACT</a>
            </Square>
             </div>
             <div className="container" style={{display:"flex", justifyContent:"center"}}>
