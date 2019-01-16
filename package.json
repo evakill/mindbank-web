@@ -22,8 +22,7 @@
     "react-dom": "^16.6.3",
     "react-facebook": "^6.0.15",
     "react-konva": "^16.6.31",
-    "react-pose": "^4.0.2",
-    "styled-jsx": "^3.1.2"
+    "react-pose": "^4.0.2"
   },
   "plugins": [
     "styled-jsx/babel"

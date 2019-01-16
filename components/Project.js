@@ -1,10 +1,12 @@
 import colors from '../colors'
+import styles from '../styles'
 import posed from "react-pose";
 
 const Square = posed.div({
   idle: { scale: 1 },
   hovered: { scale: 1 }
 });
+
 
 class Project extends React.Component {
   constructor(props) {
@@ -16,29 +18,28 @@ class Project extends React.Component {
 
   render() {
     return(
-      <div className="columns is-4 is-flex" style={{padding: 20}}>
-        <Square
-          pose={this.state.h? "hovered" : "idle"}
-          onMouseEnter={() => this.setState({ h: !this.state.h })}
-          onMouseLeave={() => this.setState({ h: !this.state.h })}>
-          {(this.state.h ? (
-            <div className="has-text-white has-text-centered is-flex" style={{flexDirection: "column", justifyContent: "center", borderRadius: 15, backgroundColor: colors.b3, padding: 10, height: 400, width: 300}}>
-              <p className="is-size-5"> <b> Project Name </b> </p>
-              <p className="is-size-6"> company desc </p>
-              <p className="is-size-6"> project proposal </p>
-              <p className="is-size-6"> deliverables </p>
-              <p className="is-size-6"> impact </p>
-            </div>) : (
-            <div className="is-flex" style={{flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: 15, backgroundColor: colors.g3,  height: 400, width: 300, padding: 30}}>
-              <img src='/static/img/crimson.png' style={{width: 200}}/>
-              <br/>
-              <p className="is-size-5"> <b> Project Name </b> </p>
-              <p className="is-size-6"> <em> year </em> </p>
-              <p className="is-size-6"> Project tagline </p>
-            </div>))}
-        </Square>
-      </div>
-      );
+      <div style={styles.card}>
+        <div className="columns">
+          <div className="column is-4 is-flex" style={{alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 20}}>
+            <img src={this.props.src} style={{maxHeight: 200}}/>
+            <br/>
+            <p className="is-size-5-desktop is-size-6-mobile has-text-centered" style={styles.accentText}> {this.props.tagline} </p>
+            <p className="is-size-6-desktop is-size-7-mobile" style={styles.subtitle}>{this.props.date} </p>
+          </div>
+          <div style={styles.redBar}></div>
+          <div className="column is-8" style={{padding: "3%"}}>
+            <div>
+              <p className="is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}> <b> {this.props.name} </b> </p> <br/>
+              <p className="is-size-5-desktop is-size-6-mobile" style={styles.text}>
+                <b>The Company: </b>{this.props.company} <br/><br/>
+                <b>Their Question: </b>{this.props.proposal} <br/><br/>
+                <b>Our Answer: </b> {this.props.results} <br/><br/>
+                {this.props.impact}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>);
   }
 }
 
