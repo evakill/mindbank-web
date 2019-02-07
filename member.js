@@ -11,14 +11,16 @@ const management = [
   {
     firstName: "Matthew",
     lastName: "Schnitzer",
+    major: "Philosophy, Politics, and Economics",
+    hometown: "New York, NY",
     role: "VP of External",
     year: "Junior",
   },
   {
     firstName: "Alyssa",
     lastName: "Furukawa",
-    hometown: "Los Angeles, California, USA",
-    major: "Networks and Data Analytics",
+    hometown: "Los Angeles, CA",
+    major: "Marketing and Operations",
     year: "Sophomore",
     role: "VP of Internal",
   },
@@ -37,12 +39,17 @@ const management = [
     img: "ryan",
     year: "Junior",
     role: "Director of Recruitment",
+    hometown: "New York, NY",
+    major: "Philosophy, Politics, and Economics"
+
   },
   {
     firstName: "Jeffrey",
     lastName: "Zhou",
     year: "Junior",
     role: "Director of Sales",
+    major: "Computer Science, Finance, and Management",
+    hometown: ""
   },
   {
     firstName: "Connor",
@@ -50,6 +57,8 @@ const management = [
     img: "connor",
     year: "Freshman",
     role: "Director of Group Development",
+    major: "Strategic Management and Marketing",
+    hometown: "Pittsburgh, PA"
   },
   {
     firstName: "Namrita",
@@ -73,6 +82,8 @@ const members = [
     firstName: "Bob",
     lastName: "Bailey",
     year: "Junior",
+    major: "Philosophy, Politics, and Economics",
+    hometown: "Franklin Lakes, NJ"
   },
   {
     firstName: "Reza",
@@ -90,23 +101,9 @@ const members = [
     img: "henry",
     lastName: "Bliss",
     year: "Junior",
-  },
-  {
-    firstName: "Aaron",
-    lastName: "Brandeis",
-    year: "Junior",
-  },
-  {
-    firstName: "Daniel",
-    img: "daniel",
-    lastName: "Tancredi",
-    year: "Junior",
-  },
-  {
-    firstName: "EJ",
-    img: "ej",
-    lastName: "Murphy",
-    year: "Junior",
+    major: "Cognative Science",
+    hometown: "New York, NY"
+
   },
   {
     firstName: "Gus",
@@ -118,11 +115,6 @@ const members = [
     firstName: "Harrison",
     img: "harrison",
     lastName: "Mashaal",
-  },
-  {
-    firstName: "Dylan",
-    lastName: "Diamond",
-    year: "Sophomore",
   },
   {
     firstName: "Vaibhaw",
@@ -141,36 +133,40 @@ const members = [
     img: "katie",
     lastName: "Hyland",
     year: "Sophomore",
+    major: "Computer Science",
+    hometown: "Chatham, NJ"
   },
   {
     firstName: "Caroline",
     img: "caroline",
     lastName: "Riise",
     year: "Sophomore",
-  },
-  {
-    firstName: "Alia",
-    img: "alia",
-    lastName: "Wallenstrom",
-    year: "Sophomore",
+    major: "Philosophy, Politics, and Economics",
+    hometown: "Chicago, IL"
   },
   {
     firstName: "Shreya",
     img: "shreya",
     lastName: "Sisodia",
     year: "Freshman",
+    major: "Behavioral Economics",
+    hometown: "Harleysville, PA",
   },
   {
     firstName: "Eliza",
     img: "eliza",
     lastName: "Thaler",
     year: "Freshman",
+    major: "Real Estate",
+    hometown: "Ardmore, PA"
   },
   {
     firstName: "Karen",
     img: "karen",
     lastName: "Yen",
     year: "Freshman",
+    major: "Computer Science and Business",
+    hoemtown: "Freemont, CA"
   },
 ]
 
@@ -210,6 +206,28 @@ const leave = [
   {
     firstName: "Carlo",
     lastName: "Chiesa",
+  },
+  {
+    firstName: "Alia",
+    img: "alia",
+    lastName: "Wallenstrom",
+    year: "Sophomore",
+  },
+  {
+    firstName: "Dylan",
+    lastName: "Diamond",
+    year: "Sophomore",
+  },
+  {
+    firstName: "Aaron",
+    lastName: "Brandeis",
+    year: "Junior",
+  },
+  {
+    firstName: "EJ",
+    img: "ej",
+    lastName: "Murphy",
+    year: "Junior",
   },
 ]
 

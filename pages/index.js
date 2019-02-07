@@ -17,7 +17,7 @@ const Index = () => (
       <div className="hero is-primary is-small" style={styles.banner}>
         <div className="hero-body is-flex" style={{flexDirection: "column"}}>
           <div className="is-flex" style={{flexDirection: "row", justifyContent: "flex-end"}}>
-            <img src="/static/img/fullLogo.png" width="80%" style={{alignSelf: "flex-end", padding: '0 3%', maxHeight: 350}}/>
+            <img src="/static/img/fullLogo.png" width="80%" style={{alignSelf: "flex-end", padding: '0 3%', maxHeight: 450}}/>
             <div style={styles.redBar}></div>
           </div>
           <div className="is-flex" style={{flexDirection: "row", paddingTop: "3%"}}>
@@ -93,7 +93,7 @@ class InfoCards extends React.Component {
           </div>
         </div>
         <div className="column">
-          <img  src="/static/img/working.jpg" style={{maxHeight: 400}}/>
+          <img  src="/static/img/gabe.jpg" style={{maxHeight: 400}}/>
         </div>
       </div>
       <div style={{margin: "0 10%"}}>

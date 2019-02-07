@@ -34,7 +34,7 @@ const About = () => (
       <div style={{margin: "3% 0"}}>
         <div style={{backgroundColor: colors.g4, padding: "5%"}}>
           <p className="is-size-3-desktop is-size-5-tablet is-size-6-mobile" style={styles.accentText}>
-            To this day, that starting principle remains steadfast. The MindBank does not have one culture, worldview, or opinion - it
+            To this day, that starting principle remains steadfast. The MindBank does not have one culture, worldview, or opinion––it
             has countless.
           </p>
         </div>
@@ -58,7 +58,7 @@ const About = () => (
             <div style={styles.redBar}></div>
             <div className="content" style={{paddingLeft: "3%"}}>
               <p className="is-size-5-desktop is-size-6-tablet is-size-6-mobile" style={styles.text}>
-              sexy mission statement
+            As a student run organization at the University of Pennsylvania, The MindBank strives to educate its members about the consulting industry through the delivery of innovative, strategic solutions for businesses involved in the campus environment.
               </p>
             </div>
           </div>

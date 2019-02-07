@@ -299,6 +299,13 @@ function (_React$Component) {
           lineNumber: 71
         },
         __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.facebook.com/pennmindbank/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "icon",
         style: {
@@ -306,34 +313,24 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-facebook-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 74
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "icon",
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
-        },
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:info@themindbank.net",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-envelope-square",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "icon",
         style: {
           color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
@@ -344,13 +341,37 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fab fa-linkedin",
+        className: "fa fa-envelope-square",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 79
         },
         __self: this
-      }))))));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.linkedin.com/company/the-mindbank/about/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "icon",
+        style: {
+          color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fab fa-linkedin",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      })))))));
     }
   }]);
 
@@ -1129,17 +1150,26 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].card,
+        style: {
+          margin: "10% 0"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "columns",
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].card,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "columns",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1152,7 +1182,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1162,13 +1192,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 25
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 26
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1176,7 +1206,7 @@ function (_React$Component) {
         style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].accentText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 27
         },
         __self: this
       }, " ", this.props.tagline, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1184,14 +1214,14 @@ function (_React$Component) {
         style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 28
         },
         __self: this
       }, this.props.date, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].redBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1201,13 +1231,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1215,19 +1245,19 @@ function (_React$Component) {
         style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].header,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 33
         },
         __self: this
       }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 33
         },
         __self: this
       }, " ", this.props.name, " "), " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 33
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1235,64 +1265,64 @@ function (_React$Component) {
         style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }, "The Company: "), this.props.company, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }, "Their Question: "), this.props.proposal, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }, "Our Answer: "), " ", this.props.results, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
-      }), this.props.impact)))));
+      }), this.props.impact))))));
     }
   }]);
 
@@ -1321,13 +1351,15 @@ var management = [{
 }, {
   firstName: "Matthew",
   lastName: "Schnitzer",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "New York, NY",
   role: "VP of External",
   year: "Junior"
 }, {
   firstName: "Alyssa",
   lastName: "Furukawa",
-  hometown: "Los Angeles, California, USA",
-  major: "Networks and Data Analytics",
+  hometown: "Los Angeles, CA",
+  major: "Marketing and Operations",
   year: "Sophomore",
   role: "VP of Internal"
 }, {
@@ -1343,18 +1375,24 @@ var management = [{
   lastName: "Boesky",
   img: "ryan",
   year: "Junior",
-  role: "Director of Recruitment"
+  role: "Director of Recruitment",
+  hometown: "New York, NY",
+  major: "Philosophy, Politics, and Economics"
 }, {
   firstName: "Jeffrey",
   lastName: "Zhou",
   year: "Junior",
-  role: "Director of Sales"
+  role: "Director of Sales",
+  major: "Computer Science, Finance, and Management",
+  hometown: ""
 }, {
   firstName: "Connor",
   lastName: "Gibson",
   img: "connor",
   year: "Freshman",
-  role: "Director of Group Development"
+  role: "Director of Group Development",
+  major: "Strategic Management and Marketing",
+  hometown: "Pittsburgh, PA"
 }, {
   firstName: "Namrita",
   lastName: "Narula",
@@ -1372,7 +1410,9 @@ var members = [{
 }, {
   firstName: "Bob",
   lastName: "Bailey",
-  year: "Junior"
+  year: "Junior",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Franklin Lakes, NJ"
 }, {
   firstName: "Reza",
   lastName: "Javaheri",
@@ -1386,21 +1426,9 @@ var members = [{
   firstName: "Henry",
   img: "henry",
   lastName: "Bliss",
-  year: "Junior"
-}, {
-  firstName: "Aaron",
-  lastName: "Brandeis",
-  year: "Junior"
-}, {
-  firstName: "Daniel",
-  img: "daniel",
-  lastName: "Tancredi",
-  year: "Junior"
-}, {
-  firstName: "EJ",
-  img: "ej",
-  lastName: "Murphy",
-  year: "Junior"
+  year: "Junior",
+  major: "Cognative Science",
+  hometown: "New York, NY"
 }, {
   firstName: "Gus",
   img: "gus",
@@ -1410,10 +1438,6 @@ var members = [{
   firstName: "Harrison",
   img: "harrison",
   lastName: "Mashaal"
-}, {
-  firstName: "Dylan",
-  lastName: "Diamond",
-  year: "Sophomore"
 }, {
   firstName: "Vaibhaw",
   img: "vaibhaw",
@@ -1428,32 +1452,37 @@ var members = [{
   firstName: "Katherine",
   img: "katie",
   lastName: "Hyland",
-  year: "Sophomore"
+  year: "Sophomore",
+  major: "Computer Science",
+  hometown: "Chatham, NJ"
 }, {
   firstName: "Caroline",
   img: "caroline",
   lastName: "Riise",
-  year: "Sophomore"
-}, {
-  firstName: "Alia",
-  img: "alia",
-  lastName: "Wallenstrom",
-  year: "Sophomore"
+  year: "Sophomore",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Chicago, IL"
 }, {
   firstName: "Shreya",
   img: "shreya",
   lastName: "Sisodia",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Behavioral Economics",
+  hometown: "Harleysville, PA"
 }, {
   firstName: "Eliza",
   img: "eliza",
   lastName: "Thaler",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Real Estate",
+  hometown: "Ardmore, PA"
 }, {
   firstName: "Karen",
   img: "karen",
   lastName: "Yen",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Computer Science and Business",
+  hoemtown: "Freemont, CA"
 }];
 var leave = [{
   firstName: "Gabe",
@@ -1483,6 +1512,24 @@ var leave = [{
 }, {
   firstName: "Carlo",
   lastName: "Chiesa"
+}, {
+  firstName: "Alia",
+  img: "alia",
+  lastName: "Wallenstrom",
+  year: "Sophomore"
+}, {
+  firstName: "Dylan",
+  lastName: "Diamond",
+  year: "Sophomore"
+}, {
+  firstName: "Aaron",
+  lastName: "Brandeis",
+  year: "Junior"
+}, {
+  firstName: "EJ",
+  img: "ej",
+  lastName: "Murphy",
+  year: "Junior"
 }];
 module.exports = {
   members: members,
@@ -6679,7 +6726,7 @@ var About = function About() {
       lineNumber: 36
     },
     __self: this
-  }, "To this day, that starting principle remains steadfast. The MindBank does not have one culture, worldview, or opinion - it has countless."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "To this day, that starting principle remains steadfast. The MindBank does not have one culture, worldview, or opinion\u2013\u2013it has countless."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       padding: "0 10%"
     },
@@ -6775,7 +6822,7 @@ var About = function About() {
       lineNumber: 60
     },
     __self: this
-  }, "sexy mission statement"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "As a student run organization at the University of Pennsylvania, The MindBank strives to educate its members about the consulting industry through the delivery of innovative, strategic solutions for businesses involved in the campus environment."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -6935,7 +6982,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 7:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -6960,5 +7007,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map

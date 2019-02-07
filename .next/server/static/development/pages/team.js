@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -393,6 +393,13 @@ function (_React$Component) {
           lineNumber: 71
         },
         __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.facebook.com/pennmindbank/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "icon",
         style: {
@@ -400,34 +407,24 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-facebook-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 74
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "icon",
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
-        },
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:info@themindbank.net",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-envelope-square",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "icon",
         style: {
           color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
@@ -438,13 +435,37 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fab fa-linkedin",
+        className: "fa fa-envelope-square",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 79
         },
         __self: this
-      }))))));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.linkedin.com/company/the-mindbank/about/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "icon",
+        style: {
+          color: _colors_js__WEBPACK_IMPORTED_MODULE_1__["default"].g1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fab fa-linkedin",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      })))))));
     }
   }]);
 
@@ -1175,13 +1196,15 @@ var management = [{
 }, {
   firstName: "Matthew",
   lastName: "Schnitzer",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "New York, NY",
   role: "VP of External",
   year: "Junior"
 }, {
   firstName: "Alyssa",
   lastName: "Furukawa",
-  hometown: "Los Angeles, California, USA",
-  major: "Networks and Data Analytics",
+  hometown: "Los Angeles, CA",
+  major: "Marketing and Operations",
   year: "Sophomore",
   role: "VP of Internal"
 }, {
@@ -1197,18 +1220,24 @@ var management = [{
   lastName: "Boesky",
   img: "ryan",
   year: "Junior",
-  role: "Director of Recruitment"
+  role: "Director of Recruitment",
+  hometown: "New York, NY",
+  major: "Philosophy, Politics, and Economics"
 }, {
   firstName: "Jeffrey",
   lastName: "Zhou",
   year: "Junior",
-  role: "Director of Sales"
+  role: "Director of Sales",
+  major: "Computer Science, Finance, and Management",
+  hometown: ""
 }, {
   firstName: "Connor",
   lastName: "Gibson",
   img: "connor",
   year: "Freshman",
-  role: "Director of Group Development"
+  role: "Director of Group Development",
+  major: "Strategic Management and Marketing",
+  hometown: "Pittsburgh, PA"
 }, {
   firstName: "Namrita",
   lastName: "Narula",
@@ -1226,7 +1255,9 @@ var members = [{
 }, {
   firstName: "Bob",
   lastName: "Bailey",
-  year: "Junior"
+  year: "Junior",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Franklin Lakes, NJ"
 }, {
   firstName: "Reza",
   lastName: "Javaheri",
@@ -1240,21 +1271,9 @@ var members = [{
   firstName: "Henry",
   img: "henry",
   lastName: "Bliss",
-  year: "Junior"
-}, {
-  firstName: "Aaron",
-  lastName: "Brandeis",
-  year: "Junior"
-}, {
-  firstName: "Daniel",
-  img: "daniel",
-  lastName: "Tancredi",
-  year: "Junior"
-}, {
-  firstName: "EJ",
-  img: "ej",
-  lastName: "Murphy",
-  year: "Junior"
+  year: "Junior",
+  major: "Cognative Science",
+  hometown: "New York, NY"
 }, {
   firstName: "Gus",
   img: "gus",
@@ -1264,10 +1283,6 @@ var members = [{
   firstName: "Harrison",
   img: "harrison",
   lastName: "Mashaal"
-}, {
-  firstName: "Dylan",
-  lastName: "Diamond",
-  year: "Sophomore"
 }, {
   firstName: "Vaibhaw",
   img: "vaibhaw",
@@ -1282,32 +1297,37 @@ var members = [{
   firstName: "Katherine",
   img: "katie",
   lastName: "Hyland",
-  year: "Sophomore"
+  year: "Sophomore",
+  major: "Computer Science",
+  hometown: "Chatham, NJ"
 }, {
   firstName: "Caroline",
   img: "caroline",
   lastName: "Riise",
-  year: "Sophomore"
-}, {
-  firstName: "Alia",
-  img: "alia",
-  lastName: "Wallenstrom",
-  year: "Sophomore"
+  year: "Sophomore",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Chicago, IL"
 }, {
   firstName: "Shreya",
   img: "shreya",
   lastName: "Sisodia",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Behavioral Economics",
+  hometown: "Harleysville, PA"
 }, {
   firstName: "Eliza",
   img: "eliza",
   lastName: "Thaler",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Real Estate",
+  hometown: "Ardmore, PA"
 }, {
   firstName: "Karen",
   img: "karen",
   lastName: "Yen",
-  year: "Freshman"
+  year: "Freshman",
+  major: "Computer Science and Business",
+  hoemtown: "Freemont, CA"
 }];
 var leave = [{
   firstName: "Gabe",
@@ -1337,6 +1357,24 @@ var leave = [{
 }, {
   firstName: "Carlo",
   lastName: "Chiesa"
+}, {
+  firstName: "Alia",
+  img: "alia",
+  lastName: "Wallenstrom",
+  year: "Sophomore"
+}, {
+  firstName: "Dylan",
+  lastName: "Diamond",
+  year: "Sophomore"
+}, {
+  firstName: "Aaron",
+  lastName: "Brandeis",
+  year: "Junior"
+}, {
+  firstName: "EJ",
+  img: "ej",
+  lastName: "Murphy",
+  year: "Junior"
 }];
 module.exports = {
   members: members,
@@ -1634,7 +1672,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*****************************!*\
   !*** multi ./pages/team.js ***!
   \*****************************/

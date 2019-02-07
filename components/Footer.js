@@ -69,15 +69,21 @@ class Footer extends React.Component {
            </Square>
             </div>
             <div className="container" style={{display:"flex", justifyContent:"center"}}>
+            <a href="https://www.facebook.com/pennmindbank/">
               <span className="icon" style={{color: colors.g1}}>
                 <i className="fab fa-facebook-square"></i>
               </span>
+            </a>
+            <a href="mailto:info@themindbank.net">
               <span className="icon" style={{color: colors.g1}}>
                 <i className="fa fa-envelope-square"></i>
               </span>
+            </a>
+            <a href="https://www.linkedin.com/company/the-mindbank/about/">
               <span className="icon" style={{color: colors.g1}}>
                 <i className="fab fa-linkedin"></i>
               </span>
+            </a>
             </div>
           </div>
         </div>
