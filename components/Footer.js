@@ -1,20 +1,11 @@
 import colors from '../colors.js'
 import posed from "react-pose";
+import styles from '../styles.js'
 
 const Square = posed.div({
   idle: { scale: 1 },
   hovered: { scale: 1.05 }
 });
-
-const styles = {
-  item: {
-    textDecoration: "none",
-    padding: 10,
-    color: colors.g1,
-    fontFamily: "Open Sans",
-    textDecoration: "none"
-  }
-}
 
 class Footer extends React.Component {
   constructor(props) {
@@ -31,12 +22,12 @@ class Footer extends React.Component {
   render() {
     return(
       <section>
-        <div className="hero is-small" style={{backgroundColor: colors.g4}}>
+        <div className="hero is-small" style={{backgroundColor: colors.g4, marginTop: "5%"}}>
           <div className="hero-body">
-            <div className="container has-text-centered" style={{display: "flex", justifyContent: "center", alignItems: "bottom"}}>
-              <b className="is-size-6" style={{color: colors.b1, fontFamily: "Montserrat"}}> THE MINDBANK </b>
+            <div className="container has-text-centered" style={{padding: 10}}>
+              <img width="15%" src="/static/img/full_logo.png" />
             </div>
-            <div className="container is-size-7" style={{display:"flex", justifyContent:"center", fontFamily: "Open Sans", color: colors.g1}}>
+            <div className="container is-size-6" style={{display:"flex", justifyContent:"center", fontFamily: "Open Sans", color: colors.g1, padding: 10}}>
             <Square
               pose={this.state.h1 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h1: true })}
@@ -70,18 +61,18 @@ class Footer extends React.Component {
             </div>
             <div className="container" style={{display:"flex", justifyContent:"center"}}>
             <a href="https://www.facebook.com/pennmindbank/">
-              <span className="icon" style={{color: colors.g1}}>
-                <i className="fab fa-facebook-square"></i>
+              <span className="icon" style={{color: colors.g1, margin: 10}}>
+                <i className="fab fa-lg fa-facebook-square"></i>
               </span>
             </a>
             <a href="mailto:info@themindbank.net">
-              <span className="icon" style={{color: colors.g1}}>
-                <i className="fa fa-envelope-square"></i>
+              <span className="icon" style={{color: colors.g1, margin: 10}}>
+                <i className="fa fa-lg fa-envelope-square"></i>
               </span>
             </a>
             <a href="https://www.linkedin.com/company/the-mindbank/about/">
-              <span className="icon" style={{color: colors.g1}}>
-                <i className="fab fa-linkedin"></i>
+              <span className="icon" style={{color: colors.g1, margin: 10}}>
+                <i className="fab fa-lg fa-linkedin"></i>
               </span>
             </a>
             </div>

@@ -3,12 +3,16 @@ import colors from './colors.js';
 export default {
   page: {
     padding: "0 10% 3% 10%",
-    marginTop: 80,
+    marginTop: 100,
   },
   banner: {
+    backgroundImage: "url(/static/img/banner.png)",
     backgroundColor: colors.g4,
-    marginTop: 80,
-    padding: "2% 8% 1% 8%"
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    paddingTop: "6rem",
+    alignItems: "center",
+    justifyContent: "center"
   },
   title: {
     color: colors.b1,
@@ -40,7 +44,7 @@ export default {
   bannerText: {
     color: colors.g1,
     fontFamily: "Lato",
-    fontWeight: 600
+    fontWeight: 600,
   },
   card: {
     boxShadow: `0px 0px 15px 7px ${colors.g3}`,
@@ -95,22 +99,29 @@ export default {
   },
   barItem: {
     textDecoration: "none",
-    padding: 10,
+    padding: 15,
     color: "white",
     fontFamily: "Open Sans",
     fontWeight: 400
   },
   redBar: {
     minHeight: "100%",
-    minWidth: 8,
+    minWidth: ".4rem",
     maxWidth: 8,
     backgroundColor: colors.r1,
     color: colors.r1,
   },
   redBarHoriz: {
-    minHeight: 10,
+    minHeight: ".4rem",
     minWidth: "100%",
     backgroundColor: colors.r1,
     color: colors.r1,
   },
+  item: {
+    textDecoration: "none",
+    padding: 10,
+    color: colors.g1,
+    fontFamily: "Open Sans",
+    textDecoration: "none"
+  }
 }

@@ -24,7 +24,7 @@ class Contact extends React.Component {
       <div style={{margin: "0 10%", paddingTop: 80}}>
         <div className="has-text-centered" style={{padding: "5%"}}>
           <p className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.title}>CONTACT US</p>
-          <p className="is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.subtitle}>
+          <p className="is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.subtitle}>
             We'd love to hear from you!
           </p>
         </div>
@@ -33,7 +33,7 @@ class Contact extends React.Component {
             <div style={styles.redBar}></div>
 
             <div className="is-flex" style={{flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "Open Sans", minWidth: "60%", paddingLeft: "3%"}}>
-              <p className="is-size-6-desktop is-size-7-mobile" style={styles.subtitle}>
+              <p className="is-size-4-fullhd is-size-6-desktop is-size-7-mobile" style={styles.subtitle}>
                 Complete this form with any general questions, concerns, or feedback.
                 We'll be sure to respond promptly.
               </p>

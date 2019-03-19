@@ -61,12 +61,22 @@ const management = [
     hometown: "Pittsburgh, PA"
   },
   {
-    firstName: "Namrita",
-    lastName: "Narula",
-    img: "namrita",
+    firstName: "Sophie",
+    img: "sophie",
+    lastName: "Cohen",
+    year: "Sophomore",
+    role: "Director of Finance"
+  },
+  {
+    firstName: "Shreya",
+    img: "shreya",
+    lastName: "Sisodia",
     year: "Freshman",
+    major: "Behavioral Economics",
+    hometown: "Harleysville, PA",
     role: "Director of Finance and Operations",
   },
+
 ]
 
 const members = [
@@ -123,12 +133,6 @@ const members = [
     year: "Sophomore",
   },
   {
-    firstName: "Sophie",
-    img: "sophie",
-    lastName: "Cohen",
-    year: "Sophomore",
-  },
-  {
     firstName: "Katherine",
     img: "katie",
     lastName: "Hyland",
@@ -145,12 +149,10 @@ const members = [
     hometown: "Chicago, IL"
   },
   {
-    firstName: "Shreya",
-    img: "shreya",
-    lastName: "Sisodia",
+    firstName: "Adrian",
+    lastName: "Sherwood",
+    img: "adrian",
     year: "Freshman",
-    major: "Behavioral Economics",
-    hometown: "Harleysville, PA",
   },
   {
     firstName: "Eliza",
@@ -168,6 +170,7 @@ const members = [
     major: "Computer Science and Business",
     hoemtown: "Freemont, CA"
   },
+
 ]
 
 const leave = [
@@ -206,12 +209,6 @@ const leave = [
   {
     firstName: "Carlo",
     lastName: "Chiesa",
-  },
-  {
-    firstName: "Alia",
-    img: "alia",
-    lastName: "Wallenstrom",
-    year: "Sophomore",
   },
   {
     firstName: "Dylan",

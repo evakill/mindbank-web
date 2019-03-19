@@ -45,18 +45,19 @@ class Header extends React.Component {
     return(
     <div>
       <CSS/>
-      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: 80, borderRadius: 0, boxShadow: `0px 0px 7px 3px ${colors.g2}`}}>
-       <div className="navbar-brand" style={{color: colors.b1}}>
-         <a href="/" style={{padding:5}}>
+      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: "6rem", borderRadius: 0, boxShadow: `0px 0px 7px 3px ${colors.g2}`}}>
+       <div className="navbar-brand">
+         <a href="/" style={{padding: 7}}>
            <Square
              pose={this.state.h1 ? "hovered" : "idle"}
              onMouseEnter={() => this.setState({ h1: true })}
              onMouseLeave={() => this.setState({ h1: false })}>
              <img
-               src="/static/img/iconWhite.png"
+               src="/static/img/icon_white.png"
                alt="The MindBank"
                width="45"
-               height="45"/>
+               height="45"
+               />
              </Square>
           </a>
 

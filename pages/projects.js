@@ -10,11 +10,11 @@ const Projects = () => (
       <div style={styles.page}>
         <div className="has-text-centered" style={{padding:"5%"}}>
           <p className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.title}>OUR PROJECTS</p>
-          <p className="is-size-5-desktop is-size-6-tablet is-size-7-mobile"  style={styles.subtitle}>
+          <p className="is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile"  style={styles.subtitle}>
             Learn about some of our past work: our clients, their problems, and our solutions.
           </p>
         </div>
-
+        <div style={{marginBottom: "10%"}}>
           <Project
             src="/static/img/crimson.png"
             name="CRIMSON EDUCATION"
@@ -25,6 +25,8 @@ const Projects = () => (
             results="We identified non-working mothers as target demographic for this product and developed a marketing strategy that leverages word-of-mouth effects."
             impact=""
           />
+        </div>
+        <div style={{marginBottom: "10%"}}>
           <Project
             src="/static/img/adventis.png"
             name="ADVENTIS"
@@ -35,6 +37,7 @@ const Projects = () => (
             results="We created a marketing approach that leverages Penn's core classes and generated incentive systems to instantiate a brand ambassador program."
             impact=""
             />
+        </div>
           <Project
             src="/static/img/kayvon2.png"
             name="KAYVON ENERPRISES"
