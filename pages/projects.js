@@ -14,7 +14,22 @@ const Projects = () => (
             Learn about some of our past work: our clients, their problems, and our solutions.
           </p>
         </div>
-        <div style={{marginBottom: "10%"}}>
+        <div style={styles.numberContainer}>
+          <div style={{textAlign: "center"}}>
+            <div style={styles.number}>32</div>
+            <div style={styles.subNumber}>PROJECTS COMPLETED</div>
+          </div>
+          <div style={{textAlign: "center"}}>
+            <div style={styles.number}>$5,000+</div>
+            <div style={styles.subNumber}>COMMISSIONS</div>
+          </div>
+          <div style={{textAlign: "center"}}>
+            <div style={styles.number}>6 weeks</div>
+            <div style={styles.subNumber}>AVERAGE TURNAROUND TIME</div>
+          </div>
+        </div>
+        <b className="is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}>FEATURED PROJECTS</b>
+        <div style={{marginBottom: "10%", paddingTop: "2%"}}>
           <Project
             src="/static/img/crimson.png"
             name="CRIMSON EDUCATION"

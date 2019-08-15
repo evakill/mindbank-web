@@ -69,8 +69,8 @@ class InfoCards extends React.Component {
       </div>
       <div className="columns is-gapless is-mobile">
         <div className="column is-half is-flex" style={{backgroundColor: colors.g4, alignItems:"center"}}>
-          <div style={{padding: "10%"}}>
-            <p className="is-size-1-fullhd is-size-3-desktop is-size-4-tablet is-size-7-mobile" style={styles.bannerText}>
+          <div style={{padding: "8%"}}>
+            <p className="is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-6-mobile" style={styles.bannerText}>
               We promote <b style={{color: colors.r1}}>experiential learning</b> with <b style={{color: colors.r1}}>tangible impact.</b>
             </p>
           </div>
@@ -110,8 +110,8 @@ class InfoCards extends React.Component {
           </div>
           <div className="column is-half is-flex" style={{backgroundColor: colors.g4, alignItems:"center"}}>
             <div style={styles.redBar}></div>
-            <div style={{padding: "10%"}}>
-              <p className="is-size-1-fullhd is-size-3-desktop is-size-4-tablet is-size-7-mobile" style={styles.bannerText}>
+            <div style={{padding: "8%"}}>
+              <p className="is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-6-mobile" style={styles.bannerText}>
                 We deliver value by <b style={{color: colors.r1}}>uncovering insights</b> only available to <b style={{color: colors.r1}}>campus insiders.</b>
               </p>
             </div>

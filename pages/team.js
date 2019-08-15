@@ -16,16 +16,27 @@ const Team = () => (
       Meet the creative, innovative, enterprising students that make up The Mindbank.
       </p>
     </div>
-    <br/>
-      <b className="is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}>MANAGEMENT</b>
-      <div style={styles.redBarHoriz}></div>
-      <div className="columns is-multiline is-mobile" style={{padding: "3% 0"}}>
-        {management.map((member) => (
-          <Member member={member} />
-        ))}
+    <div style={styles.numberContainer}>
+      <div style={{textAlign: "center"}}>
+        <div style={styles.number}>19</div>
+        <div style={styles.subNumber}>COURSES OF STUDY</div>
       </div>
+      <div style={{textAlign: "center"}}>
+        <div style={styles.number}>15</div>
+        <div style={styles.subNumber}>AREAS OF THE WORLD</div>
+      </div>
+      <div style={{textAlign: "center"}}>
+        <div style={styles.number}>52%</div>
+        <div style={styles.subNumber}>MEMBER GROWTH PER YEAR</div>
+      </div>
+    </div>
+    <b className="is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}>MANAGEMENT</b>
+    <div className="columns is-multiline is-mobile" style={{padding: "3% 0"}}>
+      {management.map((member) => (
+        <Member member={member} />
+      ))}
+    </div>
       <b className="is-size-3-desktop is-size-4-tablet is-size-4-mobile" style={styles.header}>CONSULTANTS</b>
-      <div style={styles.redBarHoriz}></div>
       <div className="columns is-multiline is-mobile" style={{padding: "3% 0"}}>
         {members.map((member) => (
           <Member member={member} />

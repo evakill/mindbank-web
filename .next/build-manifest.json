@@ -15,15 +15,19 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/projects": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/about": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/team": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/projects": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/research": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

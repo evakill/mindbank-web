@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -319,6 +319,31 @@ function (_React$Component) {
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h3 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h3: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h3: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/projects",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h4 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -332,7 +357,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -340,7 +365,7 @@ function (_React$Component) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 59
         },
         __self: this
       }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -357,7 +382,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 61
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -365,7 +390,7 @@ function (_React$Component) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 65
         },
         __self: this
       }, "CONTACT"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -376,14 +401,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.facebook.com/pennmindbank/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -394,21 +419,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-lg fa-facebook-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 71
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "mailto:info@themindbank.net",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -419,21 +444,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 75
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-lg fa-envelope-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 76
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.linkedin.com/company/the-mindbank/about/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -444,14 +469,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-lg fa-linkedin",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 81
         },
         __self: this
       })))))));
@@ -639,7 +664,7 @@ function (_React$Component) {
         "aria-label": "main navigation",
         style: {
           backgroundColor: _colors_js__WEBPACK_IMPORTED_MODULE_2__["default"].b1,
-          height: "6rem",
+          height: "5rem",
           borderRadius: 0,
           boxShadow: "0px 0px 7px 3px ".concat(_colors_js__WEBPACK_IMPORTED_MODULE_2__["default"].g2)
         },
@@ -658,7 +683,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         style: {
-          padding: 7
+          padding: 4
         },
         __source: {
           fileName: _jsxFileName,
@@ -685,8 +710,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
         alt: "The MindBank",
-        width: "45",
-        height: "45",
+        width: "40",
+        height: "40",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55
@@ -823,6 +848,31 @@ function (_React$Component) {
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h4 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h4: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h4: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h5 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -836,7 +886,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -844,7 +894,7 @@ function (_React$Component) {
         style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 103
         },
         __self: this
       }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -861,7 +911,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -869,7 +919,7 @@ function (_React$Component) {
         style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 109
         },
         __self: this
       }, "CONTACT"))))));
@@ -1197,12 +1247,97 @@ var Projects = function Projects() {
     },
     __self: this
   }, "Learn about some of our past work: our clients, their problems, and our solutions.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      marginBottom: "10%"
-    },
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].numberContainer,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      textAlign: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "32"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "PROJECTS COMPLETED")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      textAlign: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "$5,000+"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "COMMISSIONS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      textAlign: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "6 weeks"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "AVERAGE TURNAROUND TIME"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].header,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "FEATURED PROJECTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      marginBottom: "10%",
+      paddingTop: "2%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1216,7 +1351,7 @@ var Projects = function Projects() {
     impact: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 33
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1225,7 +1360,7 @@ var Projects = function Projects() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1239,7 +1374,7 @@ var Projects = function Projects() {
     impact: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 45
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1253,13 +1388,13 @@ var Projects = function Projects() {
     impact: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 56
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 67
     },
     __self: this
   }));
@@ -1318,6 +1453,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
     fontFamily: "Lora"
   },
+  bigText: {
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
+    fontFamily: "Lora",
+    fontSize: "50px"
+  },
   accentText: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].b1,
     fontFamily: "Montserrat",
@@ -1329,7 +1469,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     fontWeight: 600
   },
   card: {
-    boxShadow: "0px 0px 15px 7px ".concat(_colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g3),
+    boxShadow: "0px 0px 20px 0px rgba(0, 0, 0, .1)",
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
@@ -1384,6 +1524,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     padding: 15,
     color: "white",
     fontFamily: "Open Sans",
+    fontSize: 14,
     fontWeight: 400
   },
   redBar: {
@@ -1404,12 +1545,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     padding: 10,
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
     fontFamily: "Open Sans"
-  }, "textDecoration", "none")
+  }, "textDecoration", "none"),
+  numberContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "0 5% 5%"
+  },
+  number: {
+    fontSize: "50px",
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].r1,
+    fontFamily: "Open Sans",
+    fontWeight: "600"
+  },
+  subNumber: {
+    fontSize: "14px",
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g2
+  }
 });
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/

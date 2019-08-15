@@ -47,6 +47,12 @@ class Footer extends React.Component {
               <a href="/projects" style={styles.item}>PROJECTS</a>
             </Square>
             <Square
+              pose={this.state.h3 ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ h3: true })}
+              onMouseLeave={() => this.setState({ h3: false })}>
+             <a href="/projects" style={styles.item}>RESEARCH</a>
+           </Square>
+            <Square
               pose={this.state.h4 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h4: true })}
               onMouseLeave={() => this.setState({ h4: false })}>

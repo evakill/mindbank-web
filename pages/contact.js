@@ -21,7 +21,7 @@ class Contact extends React.Component {
     return(
       <div>
       <Header/>
-      <div style={{margin: "0 10%", paddingTop: 80}}>
+      <div style={styles.page}>
         <div className="has-text-centered" style={{padding: "5%"}}>
           <p className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.title}>CONTACT US</p>
           <p className="is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.subtitle}>

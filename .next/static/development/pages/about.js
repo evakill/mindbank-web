@@ -225,6 +225,31 @@ function (_React$Component) {
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h3 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h3: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h3: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/projects",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h4 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -238,7 +263,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -246,7 +271,7 @@ function (_React$Component) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 59
         },
         __self: this
       }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -263,7 +288,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 61
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -271,7 +296,7 @@ function (_React$Component) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 65
         },
         __self: this
       }, "CONTACT"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -282,14 +307,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.facebook.com/pennmindbank/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -300,21 +325,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-lg fa-facebook-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 71
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "mailto:info@themindbank.net",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -325,21 +350,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 75
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-lg fa-envelope-square",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 76
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.linkedin.com/company/the-mindbank/about/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -350,14 +375,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-lg fa-linkedin",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 81
         },
         __self: this
       })))))));
@@ -544,7 +569,7 @@ function (_React$Component) {
         "aria-label": "main navigation",
         style: {
           backgroundColor: _colors_js__WEBPACK_IMPORTED_MODULE_2__["default"].b1,
-          height: "6rem",
+          height: "5rem",
           borderRadius: 0,
           boxShadow: "0px 0px 7px 3px ".concat(_colors_js__WEBPACK_IMPORTED_MODULE_2__["default"].g2)
         },
@@ -563,7 +588,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         style: {
-          padding: 7
+          padding: 4
         },
         __source: {
           fileName: _jsxFileName,
@@ -590,8 +615,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
         alt: "The MindBank",
-        width: "45",
-        height: "45",
+        width: "40",
+        height: "40",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55
@@ -728,6 +753,31 @@ function (_React$Component) {
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h4 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h4: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h4: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h5 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -741,7 +791,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -749,7 +799,7 @@ function (_React$Component) {
         style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 103
         },
         __self: this
       }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -766,7 +816,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -774,7 +824,7 @@ function (_React$Component) {
         style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 109
         },
         __self: this
       }, "CONTACT"))))));
@@ -1321,52 +1371,55 @@ var management = [{
   firstName: "Eva",
   img: "eva",
   lastName: "Killenberg",
-  hometown: "Little Compton, Rhode Island, USA",
+  hometown: "Little Compton, RI",
   major: "Computer Science",
-  year: "Sophomore",
+  year: "Junior",
   role: "President"
 }, {
   firstName: "Matthew",
   lastName: "Schnitzer",
+  img: "matt",
   major: "Philosophy, Politics, and Economics",
   hometown: "New York, NY",
   role: "VP of External",
-  year: "Junior"
+  year: "Senior"
 }, {
   firstName: "Alyssa",
   lastName: "Furukawa",
+  img: "alyssa",
   hometown: "Los Angeles, CA",
   major: "Marketing and Operations",
-  year: "Sophomore",
+  year: "Junior",
   role: "VP of Internal"
 }, {
   firstName: "Krzysztof",
   img: "k",
   lastName: "Jakubowski",
-  hometown: "",
-  major: "",
-  year: "Junior",
+  hometown: "Katowice, Poland",
+  major: "Finance and Business Analytics",
+  year: "Senior",
   role: "VP of Product"
 }, {
   firstName: "Ryan",
   lastName: "Boesky",
   img: "ryan",
-  year: "Junior",
+  year: "Senior",
   role: "Director of Recruitment",
   hometown: "New York, NY",
   major: "Philosophy, Politics, and Economics"
 }, {
   firstName: "Jeffrey",
   lastName: "Zhou",
-  year: "Junior",
+  img: "jeff",
+  year: "Senior",
   role: "Director of Sales",
   major: "Computer Science, Finance, and Management",
-  hometown: ""
+  hometown: "Baltimore, MD"
 }, {
   firstName: "Connor",
   lastName: "Gibson",
   img: "connor",
-  year: "Freshman",
+  year: "Sophomore",
   role: "Director of Group Development",
   major: "Strategic Management and Marketing",
   hometown: "Pittsburgh, PA"
@@ -1374,102 +1427,105 @@ var management = [{
   firstName: "Sophie",
   img: "sophie",
   lastName: "Cohen",
-  year: "Sophomore",
-  role: "Director of Finance"
+  year: "Junior",
+  role: "Director of Finance",
+  major: "Behavioral Economics",
+  hometown: "Los Angeles, CA"
 }, {
   firstName: "Shreya",
   img: "shreya",
   lastName: "Sisodia",
-  year: "Freshman",
+  year: "Sophomore",
   major: "Behavioral Economics",
   hometown: "Harleysville, PA",
-  role: "Director of Finance and Operations"
+  role: "Director of Operations"
 }];
 var members = [{
   firstName: "Eddie",
   img: "eddie",
   lastName: "Hammond",
-  hometown: "London, England",
+  hometown: "London, UK",
   major: "Mechanical Engineering",
-  year: "Junior"
+  year: "Senior"
 }, {
   firstName: "Bob",
   lastName: "Bailey",
-  year: "Junior",
+  img: "bob",
+  year: "Senior",
   major: "Philosophy, Politics, and Economics",
   hometown: "Franklin Lakes, NJ"
 }, {
+  firstName: "Natalie",
+  lastName: "Kahn",
+  img: "natalie",
+  year: "Senior",
+  major: "Fine Arts",
+  hometown: "New York, NY"
+}, {
+  firstName: "Gabe",
+  img: "gabe",
+  lastName: "Barnett",
+  hometown: "New York, NY",
+  major: "Political Science",
+  year: "Senior"
+}, {
   firstName: "Reza",
   lastName: "Javaheri",
-  year: "Junior"
-}, {
-  firstName: "Max",
-  img: "max",
-  lastName: "Wolman",
-  year: "Junior"
+  img: "reza",
+  year: "Senior",
+  major: "Economics and Chemistry",
+  hometown: "Needham, MA"
 }, {
   firstName: "Henry",
   img: "henry",
   lastName: "Bliss",
-  year: "Junior",
+  year: "Senior",
   major: "Cognative Science",
   hometown: "New York, NY"
 }, {
   firstName: "Gus",
   img: "gus",
   lastName: "Owen",
-  year: "Junior"
-}, {
-  firstName: "Harrison",
-  img: "harrison",
-  lastName: "Mashaal"
-}, {
-  firstName: "Vaibhaw",
-  img: "vaibhaw",
-  lastName: "Ladha",
-  year: "Sophomore"
+  year: "Senior",
+  major: "International Studies and Business",
+  hometown: "London, UK"
 }, {
   firstName: "Katherine",
   img: "katie",
   lastName: "Hyland",
-  year: "Sophomore",
+  year: "Junior",
   major: "Computer Science",
   hometown: "Chatham, NJ"
 }, {
   firstName: "Caroline",
   img: "caroline",
   lastName: "Riise",
-  year: "Sophomore",
+  year: "Junior",
   major: "Philosophy, Politics, and Economics",
   hometown: "Chicago, IL"
 }, {
   firstName: "Adrian",
   lastName: "Sherwood",
   img: "adrian",
-  year: "Freshman"
+  year: "Sophomore",
+  hometown: "Austin, TX",
+  major: "Finance"
 }, {
   firstName: "Eliza",
   img: "eliza",
   lastName: "Thaler",
-  year: "Freshman",
+  year: "Sophomore",
   major: "Real Estate",
   hometown: "Ardmore, PA"
 }, {
   firstName: "Karen",
   img: "karen",
   lastName: "Yen",
-  year: "Freshman",
+  year: "Sophomore",
   major: "Computer Science and Business",
-  hoemtown: "Freemont, CA"
+  hometown: "Freemont, CA"
 }];
 var leave = [{
-  firstName: "Gabe",
-  img: "gabe",
-  lastName: "Barnett",
-  hometown: "New York, New York, USA",
-  major: "Political Science",
-  year: "Junior"
-}, {
   firstName: "Jake",
   lastName: "Diamond-Reivich"
 }, {
@@ -1478,9 +1534,6 @@ var leave = [{
 }, {
   firstName: "Morgan",
   lastName: "Hermann"
-}, {
-  firstName: "Natalie",
-  lastName: "Kahn"
 }, {
   firstName: "Thabo",
   lastName: "Dhlamini"
@@ -1493,15 +1546,30 @@ var leave = [{
 }, {
   firstName: "Dylan",
   lastName: "Diamond",
-  year: "Sophomore"
+  year: "Junior"
 }, {
   firstName: "Aaron",
   lastName: "Brandeis",
-  year: "Junior"
+  year: "Senior"
 }, {
   firstName: "EJ",
   img: "ej",
   lastName: "Murphy",
+  year: "Senior"
+}, {
+  firstName: "Vaibhaw",
+  img: "vaibhaw",
+  lastName: "Ladha",
+  year: "Junior"
+}, {
+  firstName: "Max",
+  img: "max",
+  lastName: "Wolman",
+  year: "Senior"
+}, {
+  firstName: "Harrison",
+  img: "harrison",
+  lastName: "Mashaal",
   year: "Junior"
 }];
 module.exports = {
@@ -6588,10 +6656,7 @@ var About = function About() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      padding: "0 10%",
-      marginTop: 80
-    },
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].page,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
@@ -6637,58 +6702,13 @@ var About = function About() {
       lineNumber: 20
     },
     __self: this
-  }, "HISTORY"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "is-flex",
+  }, "MISSION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
-      flexDirection: "row"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].redBar,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content",
-    style: {
-      paddingLeft: "3%"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-6-mobile",
-    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].text,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "The MindBank began as the result of the frustrations a student felt when working on a startup at the University of Pennsylvania. Whenever he asked for feedback or advice he received contradictory opinions, making decisions even more confusing. At its core, The MindBank\u2019s founding goal was to provide a place where these contrasting opinions could be raised in dialogue together, in the hope this would result in a clearer path forward for many student startups and other organizations that seek advice.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      margin: "3% 0"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      backgroundColor: _colors_js__WEBPACK_IMPORTED_MODULE_3__["default"].g4,
       padding: "5%"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -6696,94 +6716,41 @@ var About = function About() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].bannerText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 22
     },
     __self: this
-  }, "To this day, that starting principle remains steadfast. The MindBank does not have one culture, worldview, or opinion\u2014", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+  }, "As a student run organization at the University of Pennsylvania, The MindBank strives ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     style: {
       color: _colors_js__WEBPACK_IMPORTED_MODULE_3__["default"].r1
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 23
     },
     __self: this
-  }, "it has countless.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      padding: "0 10%"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "is-flex",
-    style: {
-      flexDirection: "row"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].redBar,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content",
-    style: {
-      paddingLeft: "3%"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-6-mobile",
-    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].text,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "Since it\u2019s inception, The MindBank has grown quickly and found a particular niche in the heart of the college campus, where our team of students can provide the most value. Whether working with multinational corporations to generate an effective marketing strategy or teaming up with a campus based startup to improve organizational structure, The MindBank is able to use its unique and diverse insight to help our clients obtain their intended results."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      padding: '10% 0'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+  }, "to educate its members about the consulting industry"), " through the delivery of innovative, strategic solutions for businesses involved in the campus environment.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile",
     style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 26
     },
     __self: this
-  }, "MISSION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "HISTORY"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "is-flex",
     style: {
       flexDirection: "row"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].redBar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6793,7 +6760,7 @@ var About = function About() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -6801,13 +6768,25 @@ var About = function About() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 30
     },
     __self: this
-  }, "As a student run organization at the University of Pennsylvania, The MindBank strives to educate its members about the consulting industry through the delivery of innovative, strategic solutions for businesses involved in the campus environment."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "The MindBank began as the result of the frustrations a student felt when working on a startup at the University of Pennsylvania. Whenever he asked for feedback or advice he received contradictory opinions, making decisions even more confusing. At its core, The MindBank\u2019s founding goal was to provide a place where these contrasting opinions could be raised in dialogue together, in the hope this would result in a clearer path forward for many student startups and other organizations that seek advice.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 36
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }), "Since it\u2019s inception, The MindBank has grown quickly and found a particular niche in the heart of the college campus, where our team of students can provide the most value. Whether working with multinational corporations to generate an effective marketing strategy or teaming up with a campus based startup to improve organizational structure, The MindBank is able to use its unique and diverse insight to help our clients obtain their intended results.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
     },
     __self: this
   }));
@@ -6885,6 +6864,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
     fontFamily: "Lora"
   },
+  bigText: {
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
+    fontFamily: "Lora",
+    fontSize: "50px"
+  },
   accentText: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].b1,
     fontFamily: "Montserrat",
@@ -6896,7 +6880,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     fontWeight: 600
   },
   card: {
-    boxShadow: "0px 0px 15px 7px ".concat(_colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g3),
+    boxShadow: "0px 0px 20px 0px rgba(0, 0, 0, .1)",
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
@@ -6951,6 +6935,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     padding: 15,
     color: "white",
     fontFamily: "Open Sans",
+    fontSize: 14,
     fontWeight: 400
   },
   redBar: {
@@ -6971,7 +6956,23 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     padding: 10,
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g1,
     fontFamily: "Open Sans"
-  }, "textDecoration", "none")
+  }, "textDecoration", "none"),
+  numberContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "0 5% 5%"
+  },
+  number: {
+    fontSize: "50px",
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].r1,
+    fontFamily: "Open Sans",
+    fontWeight: "600"
+  },
+  subNumber: {
+    fontSize: "14px",
+    color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g2
+  }
 });
 
 /***/ }),

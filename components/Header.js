@@ -45,9 +45,9 @@ class Header extends React.Component {
     return(
     <div>
       <CSS/>
-      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: "6rem", borderRadius: 0, boxShadow: `0px 0px 7px 3px ${colors.g2}`}}>
+      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: "5rem", borderRadius: 0, boxShadow: `0px 0px 7px 3px ${colors.g2}`}}>
        <div className="navbar-brand">
-         <a href="/" style={{padding: 7}}>
+         <a href="/" style={{padding: 4}}>
            <Square
              pose={this.state.h1 ? "hovered" : "idle"}
              onMouseEnter={() => this.setState({ h1: true })}
@@ -55,8 +55,8 @@ class Header extends React.Component {
              <img
                src="/static/img/icon_white.png"
                alt="The MindBank"
-               width="45"
-               height="45"
+               width="40"
+               height="40"
                />
              </Square>
           </a>
@@ -90,6 +90,12 @@ class Header extends React.Component {
               onMouseLeave={() => this.setState({ h4: false })}>
              <a href="/projects" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>PROJECTS</a>
            </Square>
+           <Square
+             pose={this.state.h4 ? "hovered" : "idle"}
+             onMouseEnter={() => this.setState({ h4: true })}
+             onMouseLeave={() => this.setState({ h4: false })}>
+            <a href="/research" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>RESEARCH</a>
+          </Square>
            <Square
              pose={this.state.h5 ? "hovered" : "idle"}
              onMouseEnter={() => this.setState({ h5: true })}

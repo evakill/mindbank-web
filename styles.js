@@ -36,6 +36,11 @@ export default {
     color: colors.g1,
     fontFamily: "Lora",
   },
+  bigText: {
+    color: colors.g1,
+    fontFamily: "Lora",
+    fontSize: "50px"
+  },
   accentText: {
     color: colors.b1,
     fontFamily: "Montserrat",
@@ -44,10 +49,10 @@ export default {
   bannerText: {
     color: colors.g1,
     fontFamily: "Lato",
-    fontWeight: 600,
+    fontWeight: 600
   },
   card: {
-    boxShadow: `0px 0px 15px 7px ${colors.g3}`,
+    boxShadow: `0px 0px 20px 0px rgba(0, 0, 0, .1)`,
     display: "flex",
     flexDirection: "column",
     backgroundColor: "white",
@@ -102,6 +107,7 @@ export default {
     padding: 15,
     color: "white",
     fontFamily: "Open Sans",
+    fontSize: 14,
     fontWeight: 400
   },
   redBar: {
@@ -123,5 +129,21 @@ export default {
     color: colors.g1,
     fontFamily: "Open Sans",
     textDecoration: "none"
+  },
+  numberContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "0 5% 5%"
+  },
+  number: {
+    fontSize: "50px",
+    color: colors.r1,
+    fontFamily: "Open Sans",
+    fontWeight: "600"
+  },
+  subNumber: {
+    fontSize: "14px",
+    color: colors.g2
   }
 }
