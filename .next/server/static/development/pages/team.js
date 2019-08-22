@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -520,11 +520,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -619,7 +619,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "toggleNav", function () {
+    _defineProperty(_assertThisInitialized(_this), "toggleNav", function () {
       console.log(!_this.state.isActive);
 
       _this.setState(function (prevState) {
@@ -636,6 +636,7 @@ function (_React$Component) {
       h4: false,
       h5: false,
       h6: false,
+      h7: false,
       isActive: false
     };
     return _this;
@@ -649,13 +650,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CSS, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
@@ -670,14 +671,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar-brand",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -687,7 +688,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -704,7 +705,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -714,7 +715,7 @@ function (_React$Component) {
         height: "40",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -729,16 +730,10 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 66
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 67
@@ -750,26 +745,89 @@ function (_React$Component) {
           lineNumber: 68
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu',
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 69
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "navbar-start",
+      })), this.state.isActive ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-menu is-active",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownContainer,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 72
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar-end",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdown : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].bar,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdown,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 73
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/about",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "ABOUT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/team",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, "TEAM"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/projects",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "PROJECTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }, "RESEARCH"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/news",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/contact",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, "CONTACT"))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-menu",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-end",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].bar,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -786,15 +844,15 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 85
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/about",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 89
         },
         __self: this
       }, "ABOUT")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -811,15 +869,15 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/team",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 95
         },
         __self: this
       }, "TEAM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -836,43 +894,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/projects",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 101
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.h4 ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            h4: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            h4: false
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 93
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/research",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
-      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h5 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -886,18 +919,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/news",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 103
         },
         __self: this
-      }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h6 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -911,15 +944,40 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 109
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/news",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h7 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h7: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h7: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/contact",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 119
         },
         __self: this
       }, "CONTACT"))))));
@@ -1426,9 +1484,33 @@ var leave = [{
   lastName: "Mashaal",
   year: "Junior"
 }];
+var board = [{
+  name: "Eddie Hammond",
+  role: "Chairman"
+}, {
+  name: "Bob Bailey",
+  role: "Chairman Emeritus"
+}, {
+  name: "Reza Javaheri",
+  role: "Secretary"
+}, {
+  name: "Gabriel Barnett",
+  role: "Treasurer"
+}, {
+  name: "Eva Killenberg"
+}, {
+  name: "Matthew Schnitzer"
+}, {
+  name: "Alyssa Furukawa"
+}, {
+  name: "Krzysztof Jakubowski"
+}, {
+  name: "Ryan Boesky"
+}];
 module.exports = {
   members: members,
-  management: management
+  management: management,
+  board: board
 };
 
 /***/ }),
@@ -1457,28 +1539,29 @@ var _jsxFileName = "/Users/killenberge/mindbank-web/pages/team.js";
 
 
 
-var members = __webpack_require__(/*! ../member.js */ "./member.js").members;
-
-var management = __webpack_require__(/*! ../member.js */ "./member.js").management;
+var _require = __webpack_require__(/*! ../member.js */ "./member.js"),
+    members = _require.members,
+    management = _require.management,
+    board = _require.board;
 
 var Team = function Team() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].page,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1488,7 +1571,7 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1496,7 +1579,7 @@ var Team = function Team() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "OUR TEAM"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1504,14 +1587,14 @@ var Team = function Team() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, "Meet the creative, innovative, enterprising students that make up The Mindbank.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].numberContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1520,21 +1603,21 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, "19"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, "COURSES OF STUDY")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1543,21 +1626,21 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }, "15"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }, "AREAS OF THE WORLD")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1566,21 +1649,21 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].number,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
   }, "52%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].subNumber,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }, "MEMBER GROWTH PER YEAR"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1588,7 +1671,7 @@ var Team = function Team() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, "MANAGEMENT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1598,7 +1681,7 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, management.map(function (member) {
@@ -1606,7 +1689,7 @@ var Team = function Team() {
       member: member,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 35
       },
       __self: this
     });
@@ -1615,7 +1698,7 @@ var Team = function Team() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, "CONSULTANTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1625,7 +1708,7 @@ var Team = function Team() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, members.map(function (member) {
@@ -1633,14 +1716,57 @@ var Team = function Team() {
       member: member,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 41
       },
       __self: this
     });
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "is-size-3-desktop is-size-4-tablet is-size-4-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].header,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "BOARD OF DIRECTORS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      textAlign: "center",
+      paddingTop: "5%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, board.map(function (member) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        padding: 5
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "is-size-6",
+      style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].text,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, member.name, member.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, ", ", member.role) : ''));
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 56
     },
     __self: this
   }));
@@ -1748,7 +1874,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   dropdown: {
     padding: 0,
     margin: 0,
-    textDecoration: "none"
+    textDecoration: "none",
+    display: "flex",
+    flexDirection: "column",
+    overflow: "hidden"
+  },
+  dropdownContainer: {
+    float: "right",
+    boxShadow: "-2px 2px 10px 10px rgba(0, 0, 0, 0.1)",
+    width: "30%",
+    marginTop: 60
   },
   bar: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g4,
@@ -1761,9 +1896,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   dropdownItem: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].b1,
     textDecoration: "none",
-    padding: 10,
+    padding: 5,
     fontFamily: "Open Sans",
-    fontWeight: 400
+    fontWeight: 400,
+    fontSize: 14,
+    scale: "1 !important"
   },
   barItem: {
     textDecoration: "none",
@@ -1812,7 +1949,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*****************************!*\
   !*** multi ./pages/team.js ***!
   \*****************************/

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -520,11 +520,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -619,7 +619,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "toggleNav", function () {
+    _defineProperty(_assertThisInitialized(_this), "toggleNav", function () {
       console.log(!_this.state.isActive);
 
       _this.setState(function (prevState) {
@@ -636,6 +636,7 @@ function (_React$Component) {
       h4: false,
       h5: false,
       h6: false,
+      h7: false,
       isActive: false
     };
     return _this;
@@ -649,13 +650,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CSS, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
@@ -670,14 +671,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar-brand",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -687,7 +688,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -704,7 +705,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -714,7 +715,7 @@ function (_React$Component) {
         height: "40",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -729,16 +730,10 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 66
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 67
@@ -750,26 +745,89 @@ function (_React$Component) {
           lineNumber: 68
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu',
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 69
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "navbar-start",
+      })), this.state.isActive ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-menu is-active",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownContainer,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 72
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar-end",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdown : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].bar,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdown,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 73
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/about",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "ABOUT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/team",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, "TEAM"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/projects",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "PROJECTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }, "RESEARCH"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/news",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/contact",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, "CONTACT"))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-menu",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navbar-end",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].bar,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -786,15 +844,15 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 85
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/about",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 89
         },
         __self: this
       }, "ABOUT")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -811,15 +869,15 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/team",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 95
         },
         __self: this
       }, "TEAM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -836,43 +894,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/projects",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 101
         },
         __self: this
       }, "PROJECTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.h4 ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            h4: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            h4: false
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 93
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/research",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
-      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h5 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -886,18 +919,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/news",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 103
         },
         __self: this
-      }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/research",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }, "RESEARCH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h6 ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -911,15 +944,40 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 109
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/news",
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      }, "NEWS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h7 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h7: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h7: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/contact",
-        style: this.state.isActive ? _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].dropdownItem : _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_3__["default"].barItem,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 119
         },
         __self: this
       }, "CONTACT"))))));
@@ -944,12 +1002,14 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _colors_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../colors.js */ "./colors.js");
-/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles.js */ "./styles.js");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-pose */ "react-pose");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! emailjs-com */ "emailjs-com");
+/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(emailjs_com__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _colors_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../colors.js */ "./colors.js");
+/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles.js */ "./styles.js");
 var _jsxFileName = "/Users/killenberge/mindbank-web/pages/contact.js";
 
 
@@ -976,12 +1036,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Square = react_pose__WEBPACK_IMPORTED_MODULE_5___default.a.div({
+
+var Square = react_pose__WEBPACK_IMPORTED_MODULE_1___default.a.div({
   idle: {
     scale: 1
   },
   hovered: {
-    scale: 1.03
+    scale: 1.01
   }
 });
 
@@ -997,33 +1058,79 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Contact).call(this, props));
     _this.state = {
-      h: false
+      h: false,
+      name: '',
+      email: '',
+      message: '',
+      listServ: false,
+      successAlert: false,
+      errorAlert: false
     };
+    emailjs_com__WEBPACK_IMPORTED_MODULE_2__["init"]('user_EjB6lEHEOdkqInAOT0u59');
     return _this;
   }
 
   _createClass(Contact, [{
-    key: "render",
-    value: function render() {
+    key: "submit",
+    value: function submit() {
       var _this2 = this;
 
+      var _this$state = this.state,
+          name = _this$state.name,
+          email = _this$state.email,
+          message = _this$state.message,
+          listServ = _this$state.listServ;
+      listServ = listServ ? 'Y' : 'N';
+      emailjs_com__WEBPACK_IMPORTED_MODULE_2__["send"]('default_service', 'template_8hm8wudW', {
+        name: name,
+        email: email,
+        message: message,
+        listServ: listServ
+      }, 'user_EjB6lEHEOdkqInAOT0u59').then(function (response) {
+        _this2.setState({
+          name: '',
+          email: '',
+          message: '',
+          listServ: '',
+          successAlert: true
+        });
+      }, function (err) {
+        _this2.setState({
+          name: '',
+          email: '',
+          message: '',
+          listServ: '',
+          errorAlert: true
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$state2 = this.state,
+          name = _this$state2.name,
+          email = _this$state2.email,
+          message = _this$state2.message,
+          listServ = _this$state2.listServ;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 43
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 44
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].page,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1033,26 +1140,26 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "is-size-1-desktop is-size-2-tablet is-size-3-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].title,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 47
         },
         __self: this
       }, "CONTACT US"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 48
         },
         __self: this
-      }, "We'd love to hear from you!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " We'd love to hear from you! ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "is-flex",
         style: {
           flexDirection: "row",
@@ -1062,14 +1169,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].redBar,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 51
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1084,21 +1191,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "is-size-4-fullhd is-size-6-desktop is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 53
         },
         __self: this
       }, "Complete this form with any general questions, concerns, or feedback. We'll be sure to respond promptly."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1108,30 +1215,36 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "label has-text-left",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 59
         },
         __self: this
       }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        value: name,
+        onChange: function onChange(e) {
+          return _this3.setState({
+            name: e.target.value
+          });
+        },
         className: "input",
         type: "text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 61
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1141,30 +1254,36 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "label has-text-left",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 65
         },
         __self: this
       }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        value: email,
+        onChange: function onChange(e) {
+          return _this3.setState({
+            email: e.target.value
+          });
+        },
         className: "input",
         type: "email",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 67
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1174,29 +1293,35 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "label has-text-left",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].subtitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 71
         },
         __self: this
       }, "Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        value: message,
+        onChange: function onChange(e) {
+          return _this3.setState({
+            message: e.target.value
+          });
+        },
         className: "textarea",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 73
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1206,21 +1331,27 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        value: listServ,
+        onClick: function onClick(e) {
+          return _this3.setState({
+            listServ: !listServ
+          });
+        },
         type: "checkbox",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 78
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
@@ -1230,49 +1361,69 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 79
         },
         __self: this
-      }, "Add me to the MindBank ListServ.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Add me to the MindBank ListServ.")), this.state.successAlert ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        style: {
+          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, " Thank you for your message! We will get back to you soon. ") : "", this.state.errorAlert ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        style: {
+          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, " There was an error sending your message, please try again. If error persists, please contact info@themindbank.net ") : "", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control is-flex",
         style: {
           flexDirection: "column"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 83
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.h ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
+          return _this3.setState({
             h: true
           });
         },
         onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
+          return _this3.setState({
             h: false
           });
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 84
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/team",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onClick: function onClick(e) {
+          return _this3.submit();
+        },
         className: "button is-size-5-desktop is-size-6-tablet is-size-6-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].cardButton,
+        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardButton,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 89
         },
         __self: this
       }, "Submit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -1282,13 +1433,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 90
         },
         __self: this
-      })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 98
         },
         __self: this
       }));
@@ -1400,7 +1551,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   dropdown: {
     padding: 0,
     margin: 0,
-    textDecoration: "none"
+    textDecoration: "none",
+    display: "flex",
+    flexDirection: "column",
+    overflow: "hidden"
+  },
+  dropdownContainer: {
+    float: "right",
+    boxShadow: "-2px 2px 10px 10px rgba(0, 0, 0, 0.1)",
+    width: "30%",
+    marginTop: 60
   },
   bar: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].g4,
@@ -1413,9 +1573,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   dropdownItem: {
     color: _colors_js__WEBPACK_IMPORTED_MODULE_0__["default"].b1,
     textDecoration: "none",
-    padding: 10,
+    padding: 5,
     fontFamily: "Open Sans",
-    fontWeight: 400
+    fontWeight: 400,
+    fontSize: 14,
+    scale: "1 !important"
   },
   barItem: {
     textDecoration: "none",
@@ -1464,7 +1626,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 9:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
@@ -1473,6 +1635,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 module.exports = __webpack_require__(/*! ./pages/contact.js */"./pages/contact.js");
 
+
+/***/ }),
+
+/***/ "emailjs-com":
+/*!******************************!*\
+  !*** external "emailjs-com" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("emailjs-com");
 
 /***/ }),
 

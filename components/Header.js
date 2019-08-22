@@ -30,6 +30,7 @@ class Header extends React.Component {
       h4: false,
       h5: false,
       h6: false,
+      h7: false,
       isActive: false,
     }
   }
@@ -67,52 +68,60 @@ class Header extends React.Component {
          <span></span>
          <span></span>
        </div>
-
-      <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-         <div className="navbar-start"></div>
-         <div className="navbar-end"
-          style={ this.state.isActive ? styles.dropdown : styles.bar}>
-           <Square
-             pose={this.state.h2 ? "hovered" : "idle"}
-             onMouseEnter={() => this.setState({ h2: true })}
-             onMouseLeave={() => this.setState({ h2: false })}>
-             <a href="/about" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>ABOUT</a>
-            </Square>
-            <Square
-              pose={this.state.h3 ? "hovered" : "idle"}
-              onMouseEnter={() => this.setState({ h3: true })}
-              onMouseLeave={() => this.setState({ h3: false })}>
-               <a href="/team" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>TEAM</a>
-            </Square>
-            <Square
-              pose={this.state.h4 ? "hovered" : "idle"}
-              onMouseEnter={() => this.setState({ h4: true })}
-              onMouseLeave={() => this.setState({ h4: false })}>
-             <a href="/projects" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>PROJECTS</a>
-           </Square>
-           <Square
-             pose={this.state.h4 ? "hovered" : "idle"}
-             onMouseEnter={() => this.setState({ h4: true })}
-             onMouseLeave={() => this.setState({ h4: false })}>
-            <a href="/research" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>RESEARCH</a>
-          </Square>
-           <Square
-             pose={this.state.h5 ? "hovered" : "idle"}
-             onMouseEnter={() => this.setState({ h5: true })}
-             onMouseLeave={() => this.setState({ h5: false })}>
-             <a href="/news" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>NEWS</a>
-          </Square>
-           <Square
-             pose={this.state.h6 ? "hovered" : "idle"}
-             onMouseEnter={() => this.setState({ h6: true })}
-             onMouseLeave={() => this.setState({ h6: false })}>
-             <a href="/contact" style={ this.state.isActive ? styles.dropdownItem : styles.barItem}>CONTACT</a>
-          </Square>
-         </div>
-       </div>
+       {this.state.isActive ? (
+           <div className='navbar-menu is-active' style={styles.dropdownContainer}>
+                <div className="navbar-end" style={styles.dropdown}>
+                    <a href="/about" style={styles.dropdownItem}>ABOUT</a>
+                    <a href="/team" style={styles.dropdownItem}>TEAM</a>
+                    <a href="/projects" style={styles.dropdownItem}>PROJECTS</a>
+                    <a href="/research" style={styles.dropdownItem}>RESEARCH</a>
+                    <a href="/news" style={styles.dropdownItem}>NEWS</a>
+                    <a href="/contact" style={styles.dropdownItem}>CONTACT</a>
+                </div>
+            </div>
+       ) : (
+           <div className='navbar-menu'>
+              <div className="navbar-end" style={styles.bar}>
+                <Square
+                  pose={this.state.h2 ? "hovered" : "idle"}
+                  onMouseEnter={() => this.setState({ h2: true })}
+                  onMouseLeave={() => this.setState({ h2: false })}>
+                  <a href="/about" style={styles.barItem}>ABOUT</a>
+                 </Square>
+                 <Square
+                   pose={this.state.h3 ? "hovered" : "idle"}
+                   onMouseEnter={() => this.setState({ h3: true })}
+                   onMouseLeave={() => this.setState({ h3: false })}>
+                    <a href="/team" style={styles.barItem}>TEAM</a>
+                 </Square>
+                 <Square
+                   pose={this.state.h4 ? "hovered" : "idle"}
+                   onMouseEnter={() => this.setState({ h4: true })}
+                   onMouseLeave={() => this.setState({ h4: false })}>
+                  <a href="/projects" style={styles.barItem}>PROJECTS</a>
+                </Square>
+                <Square
+                  pose={this.state.h5 ? "hovered" : "idle"}
+                  onMouseEnter={() => this.setState({ h5: true })}
+                  onMouseLeave={() => this.setState({ h5: false })}>
+                 <a href="/research" style={styles.barItem}>RESEARCH</a>
+               </Square>
+                <Square
+                  pose={this.state.h6 ? "hovered" : "idle"}
+                  onMouseEnter={() => this.setState({ h6: true })}
+                  onMouseLeave={() => this.setState({ h6: false })}>
+                  <a href="/news" style={styles.barItem}>NEWS</a>
+               </Square>
+                <Square
+                  pose={this.state.h7 ? "hovered" : "idle"}
+                  onMouseEnter={() => this.setState({ h7: true })}
+                  onMouseLeave={() => this.setState({ h7: false })}>
+                  <a href="/contact" style={styles.barItem}>CONTACT</a>
+               </Square>
+              </div>
+            </div>
+       )}
       </nav>
-
-
     </div>
   );
 }

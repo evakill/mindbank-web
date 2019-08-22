@@ -86,6 +86,15 @@ export default {
     padding: 0,
     margin: 0,
     textDecoration: "none",
+    display: "flex",
+    flexDirection: "column",
+    overflow: "hidden",
+  },
+  dropdownContainer: {
+      float: "right",
+      boxShadow: "-2px 2px 10px 10px rgba(0, 0, 0, 0.1)",
+      width: "30%",
+      marginTop: 60
   },
   bar: {
     color: colors.g4,
@@ -98,9 +107,11 @@ export default {
   dropdownItem: {
     color: colors.b1,
     textDecoration: "none",
-    padding: 10,
+    padding: 5,
     fontFamily: "Open Sans",
-    fontWeight: 400
+    fontWeight: 400,
+    fontSize: 14,
+    scale: "1 !important"
   },
   barItem: {
     textDecoration: "none",

@@ -2,7 +2,6 @@ import posed from "react-pose";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { FacebookProvider, EmbeddedPost, Page } from 'react-facebook';
-import { Button } from 'react-bootstrap'
 import colors from '../colors.js'
 import styles from '../styles.js'
 

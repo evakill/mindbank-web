@@ -245,7 +245,42 @@ const leave = [
   },
 ]
 
+const board = [
+  {
+    name: "Eddie Hammond",
+    role: "Chairman"
+  },
+  {
+    name: "Bob Bailey",
+    role: "Chairman Emeritus"
+  },
+  {
+    name: "Reza Javaheri",
+    role: "Secretary"
+  },
+  {
+    name: "Gabriel Barnett",
+    role: "Treasurer"
+  },
+  {
+    name: "Eva Killenberg",
+  },
+  {
+    name: "Matthew Schnitzer",
+  },
+  {
+    name: "Alyssa Furukawa",
+  },
+  {
+    name: "Krzysztof Jakubowski",
+  },
+  {
+    name: "Ryan Boesky",
+  }
+]
+
 module.exports = {
   members: members,
-  management: management
+  management: management,
+  board: board
 };

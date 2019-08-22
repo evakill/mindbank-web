@@ -15,14 +15,19 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.0",
-    "konva": "^2.5.1",
+    "emailjs-com": "^2.3.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.6.9",
+    "net": "^1.0.2",
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-facebook": "^6.0.15",
-    "react-konva": "^16.6.31",
-    "react-pose": "^4.0.2"
+    "react-pose": "^4.0.2",
+    "tls": "0.0.1",
+    "toasted-notes": "^2.1.6"
   },
   "plugins": [
     "styled-jsx/babel"

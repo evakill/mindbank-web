@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_86d7de3159d32d38a4d2.js"
+    "static/development/dll/dll_e6d36743614ebc6cbc05.js"
   ],
   "pages": {
     "/_app": [
@@ -11,23 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/contact": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/about": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/team": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/projects": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/research": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -35,7 +23,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/contact": [
+    "/projects": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/team": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/research": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
