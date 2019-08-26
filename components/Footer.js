@@ -16,6 +16,7 @@ class Footer extends React.Component {
       h3: false,
       h4: false,
       h5: false,
+      h6: false,
     }
   }
 
@@ -47,21 +48,21 @@ class Footer extends React.Component {
               <a href="/projects" style={styles.item}>PROJECTS</a>
             </Square>
             <Square
-              pose={this.state.h3 ? "hovered" : "idle"}
-              onMouseEnter={() => this.setState({ h3: true })}
-              onMouseLeave={() => this.setState({ h3: false })}>
-             <a href="/projects" style={styles.item}>RESEARCH</a>
-           </Square>
-            <Square
               pose={this.state.h4 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h4: true })}
               onMouseLeave={() => this.setState({ h4: false })}>
-              <a href="/news" style={styles.item}>NEWS</a>
+             <a href="/projects" style={styles.item}>RESEARCH</a>
            </Square>
             <Square
               pose={this.state.h5 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h5: true })}
               onMouseLeave={() => this.setState({ h5: false })}>
+              <a href="/news" style={styles.item}>NEWS</a>
+           </Square>
+            <Square
+              pose={this.state.h6 ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ h6: true })}
+              onMouseLeave={() => this.setState({ h6: false })}>
               <a href="/contact" style={styles.item}>CONTACT</a>
            </Square>
             </div>

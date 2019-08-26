@@ -46,7 +46,7 @@ class Header extends React.Component {
     return(
     <div>
       <CSS/>
-      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: "5rem", borderRadius: 0, boxShadow: `0px 0px 7px 3px ${colors.g2}`}}>
+      <nav className="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation" style={{backgroundColor: colors.b1, height: "5rem", borderRadius: 0, boxShadow: `0px 0px 7px 3px rgba(0, 0, 0, 0.1)`}}>
        <div className="navbar-brand">
          <a href="/" style={{padding: 4}}>
            <Square
