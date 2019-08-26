@@ -615,7 +615,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
-        alt: "The MindBank",
+        alt: "MindBank",
         width: "40",
         height: "40",
         __source: {

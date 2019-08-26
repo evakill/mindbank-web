@@ -370,7 +370,7 @@ function (_React$Component) {
           lineNumber: 79
         },
         __self: this
-      }, "Add me to the MindBank ListServ.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Add me to MindBank ListServ.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "control is-flex",
         style: {
           flexDirection: "column"

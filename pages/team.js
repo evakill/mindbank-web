@@ -12,7 +12,7 @@ const Team = () => (
       <div className="has-text-centered" style={{padding: "5%"}}>
         <p className="is-size-1-desktop is-size-2-tablet is-size-3-mobile" style={styles.title}>OUR TEAM</p>
         <p className="is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.subtitle}>
-        Meet the creative, innovative, enterprising students that make up The Mindbank.
+        Meet the creative, innovative, enterprising students that make up MindBank.
         </p>
       </div>
       <div style={styles.numberContainer}>

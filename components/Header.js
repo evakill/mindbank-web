@@ -55,7 +55,7 @@ class Header extends React.Component {
              onMouseLeave={() => this.setState({ h1: false })}>
              <img
                src="/static/img/icon_white.png"
-               alt="The MindBank"
+               alt="MindBank"
                width="40"
                height="40"
                />

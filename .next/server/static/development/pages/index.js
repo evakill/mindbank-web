@@ -710,7 +710,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
-        alt: "The MindBank",
+        alt: "MindBank",
         width: "40",
         height: "40",
         __source: {
@@ -1174,7 +1174,7 @@ function (_React$Component) {
           lineNumber: 51
         },
         __self: this
-      }, "The Mindbank is a bright, diverse group of Penn students. We are young women and men studying liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving and a desire to learn and engage."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      }, "MindBank is a bright, diverse group of Penn students. We are young women and men studying liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving and a desire to learn and engage."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.hTeam ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({
@@ -1341,7 +1341,7 @@ function (_React$Component) {
           lineNumber: 89
         },
         __self: this
-      }, "The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+      }, "MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
         pose: this.state.hProjects ? "hovered" : "idle",
         onMouseEnter: function onMouseEnter() {
           return _this2.setState({

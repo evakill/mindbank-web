@@ -615,7 +615,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
-        alt: "The MindBank",
+        alt: "MindBank",
         width: "40",
         height: "40",
         __source: {
@@ -6856,7 +6856,7 @@ var Team = function Team() {
       lineNumber: 14
     },
     __self: this
-  }, "Meet the creative, innovative, enterprising students that make up The Mindbank.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Meet the creative, innovative, enterprising students that make up MindBank.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_5__["default"].numberContainer,
     __source: {
       fileName: _jsxFileName,

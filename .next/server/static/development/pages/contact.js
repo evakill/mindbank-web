@@ -710,7 +710,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/img/icon_white.png",
-        alt: "The MindBank",
+        alt: "MindBank",
         width: "40",
         height: "40",
         __source: {
@@ -1364,7 +1364,7 @@ function (_React$Component) {
           lineNumber: 79
         },
         __self: this
-      }, "Add me to the MindBank ListServ.")), this.state.successAlert ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      }, "Add me to MindBank ListServ.")), this.state.successAlert ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         style: {
           color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
         },

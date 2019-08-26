@@ -49,7 +49,7 @@ class InfoCards extends React.Component {
               <div style={styles.redBarHoriz}></div>
             </b>
             <p className="is-size-2-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardText}>
-              The Mindbank is a bright, diverse group of Penn students. We are young women and men studying
+              MindBank is a bright, diverse group of Penn students. We are young women and men studying
               liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different
               political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving
               and a desire to learn and engage.
@@ -87,7 +87,7 @@ class InfoCards extends React.Component {
               <div style={styles.redBarHoriz}></div>
             </b>
             <p className="is-size-2-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile" style={styles.cardText}>
-              The MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
+              MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative
               and iterative project cycle, we identify business needs then use our expertise to propose original and informed
               advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions.
             </p>
