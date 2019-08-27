@@ -107,6 +107,7 @@ const members = [
     year: "Senior",
     major: "Fine Arts",
     hometown: "New York, NY",
+    role: "Design & Marketing",
   },
   {
     firstName: "Gabe",
@@ -155,7 +156,8 @@ const members = [
     lastName: "Riise",
     year: "Junior",
     major: "Philosophy, Politics, and Economics",
-    hometown: "Chicago, IL"
+    hometown: "Chicago, IL",
+    role: "Content Creation"
   },
   {
     firstName: "Adrian",
@@ -163,7 +165,7 @@ const members = [
     img: "adrian",
     year: "Sophomore",
     hometown: "Austin, TX",
-    major: "Finance",
+    major: "Finance"
   },
   {
     firstName: "Eliza",
@@ -171,7 +173,8 @@ const members = [
     lastName: "Thaler",
     year: "Sophomore",
     major: "Real Estate",
-    hometown: "Ardmore, PA"
+    hometown: "Ardmore, PA",
+    role: "Content Creation"
   },
   {
     firstName: "Karen",
