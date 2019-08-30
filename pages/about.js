@@ -28,16 +28,9 @@ const About = () => (
           <div style={styles.redBar}></div>
           <div className="content" style={{paddingLeft: "3%"}}>
             <p className="is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-6-mobile" style={styles.text}>
-              MindBank began as the result of the frustrations a student felt when working on a startup at the University of Pennsylvania.
-              Whenever he asked for feedback or advice he received contradictory opinions, making decisions even
-              more confusing. At its core, MindBank’s founding goal was to provide a place where these contrasting opinions could be
-              raised in dialogue together, in the hope this would result in a clearer path forward for many student startups and other
-              organizations that seek advice.
-              <br/><br/>
-              Since it’s inception, MindBank has grown quickly and found a particular niche in the heart of the college campus, where
-              our team of students can provide the most value. Whether working with multinational corporations to generate an
-              effective marketing strategy or teaming up with a campus based startup to improve organizational structure,
-              MindBank is able to use its unique and diverse insight to help our clients obtain their intended results.
+            MindBank was formed by a group of Penn students looking for ways to broaden their academic experience and develop their real-world problem solving skills. They realized that a diverse and interdisciplinary group of students could provide unique value to startups, campus groups, and even established companies looking for advice on how to engage and compete in a collegiate environment. Our focus on the campus environment is the core of MindBank’s pitch and our niche in the consulting space.
+            <br/><br/>
+            Since it’s inception, MindBank has grown quickly. We have completed over 32 projects and now have a team of over 20 student consultants. Whether working with large corporations to generate new marketing strategies or teaming up with a campus based startup to improve their business model, MindBank is able to use its unique and diverse insight to help our clients obtain their intended results.
             </p>
           </div>
         </div>

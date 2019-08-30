@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -992,10 +992,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./components/Member.js":
+/*!******************************!*\
+  !*** ./components/Member.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1003,15 +1003,292 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-pose */ "react-pose");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-facebook */ "react-facebook");
-/* harmony import */ var react_facebook__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_facebook__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _colors_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../colors.js */ "./colors.js");
-/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles.js */ "./styles.js");
-var _jsxFileName = "/Users/killenberge/mindbank-web/pages/index.js";
+/* harmony import */ var _colors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../colors */ "./colors.js");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/killenberge/mindbank-web/components/Member.js";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Square = react_pose__WEBPACK_IMPORTED_MODULE_2___default.a.div({
+  idle: {
+    scale: 1
+  },
+  hovered: {
+    scale: 1.05
+  }
+});
+
+var Member =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Member, _React$Component);
+
+  function Member(props) {
+    var _this;
+
+    _classCallCheck(this, Member);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Member).call(this, props));
+    _this.state = {
+      h: false
+    };
+    return _this;
+  }
+
+  _createClass(Member, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "column is-one-quarter-desktop is-one-third-tablet is-one-half-mobile is-flex",
+        style: {
+          padding: 20,
+          flexDirection: "column",
+          alignItems: "center",
+          fontFamily: "Open Sans"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.hTeam ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "is-flex",
+        style: {
+          flexDirection: "column",
+          alignItems: "center"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, this.state.h ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "has-text-white has-text-centered is-flex",
+        style: {
+          flexDirection: "column",
+          justifyContent: "center",
+          minHeight: 200,
+          width: 200,
+          borderRadius: "100%",
+          backgroundColor: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].g2,
+          padding: 10,
+          boxShadow: "0px 0px 15px 7px ".concat(_colors__WEBPACK_IMPORTED_MODULE_1__["default"].g3)
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "is-size-6",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, this.props.member.firstName, " ", this.props.member.lastName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-graduation-cap",
+        style: {
+          padding: "3px 4px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), this.props.member.year), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-map-pin",
+        style: {
+          padding: "3px 4px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), this.props.member.hometown), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-book-open",
+        style: {
+          padding: "3px 4px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), this.props.member.major)) : this.props.member.img ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/img/headshots/".concat(this.props.member.img, ".jpg"),
+        style: {
+          height: 200,
+          width: 200,
+          borderRadius: 100,
+          padding: 10
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "is-flex",
+        style: {
+          justifyContent: "center",
+          alignItems: "center",
+          height: 200,
+          width: 200,
+          borderRadius: 100,
+          padding: 10,
+          backgroundColor: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].g3
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "icon is-large",
+        style: {
+          height: 100,
+          width: 100
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fas fa-user",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-5-desktop is-size-6-tablet is-size-6-mobile",
+        style: {
+          color: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].g1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, " ", this.props.member.firstName, " "), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-6-desktop is-size-7-mobile has-text-centered",
+        style: {
+          color: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].g1,
+          width: 200
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, " ", this.props.member.role, " "), " "))));
+    }
+  }]);
+
+  return Member;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Member);
+
+/***/ }),
+
+/***/ "./components/Project.js":
+/*!*******************************!*\
+  !*** ./components/Project.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _colors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../colors */ "./colors.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles */ "./styles.js");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/killenberge/mindbank-web/components/Project.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1035,438 +1312,637 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-
-var Square = react_pose__WEBPACK_IMPORTED_MODULE_1___default.a.div({
+var Square = react_pose__WEBPACK_IMPORTED_MODULE_3___default.a.div({
   idle: {
     scale: 1
   },
   hovered: {
-    scale: 1.03
+    scale: 1
   }
 });
 
-var Index = function Index() {
+var Project =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Project, _React$Component);
+
+  function Project(props) {
+    var _this;
+
+    _classCallCheck(this, Project);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Project).call(this, props));
+    _this.state = {
+      h: false
+    };
+    return _this;
+  }
+
+  _createClass(Project, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].card,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "columns",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "column is-4 is-flex",
+        style: {
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          padding: 20
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: this.props.src,
+        style: {
+          maxHeight: 200
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-3-fullhd is-size-5-desktop is-size-6-mobile has-text-centered",
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].accentText,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, " ", this.props.tagline, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-5-fullhd is-size-6-desktop is-size-7-mobile",
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].subtitle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, this.props.date, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].redBar,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "column is-8",
+        style: {
+          padding: "3%"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile",
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].header,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, " ", this.props.name, " "), " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-3-fullhd is-size-5-desktop is-size-6-mobile",
+        style: _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, "The Company: "), this.props.company, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "Their Question: "), this.props.proposal, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, "Our Answer: "), " ", this.props.results, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), this.props.impact)))));
+    }
+  }]);
+
+  return Project;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Project);
+
+/***/ }),
+
+/***/ "./member.js":
+/*!*******************!*\
+  !*** ./member.js ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var management = [{
+  firstName: "Eva",
+  img: "eva",
+  lastName: "Killenberg",
+  hometown: "Little Compton, RI",
+  major: "Computer Science",
+  year: "Junior",
+  role: "President"
+}, {
+  firstName: "Matthew",
+  lastName: "Schnitzer",
+  img: "matt",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "New York, NY",
+  role: "VP of External",
+  year: "Senior"
+}, {
+  firstName: "Alyssa",
+  lastName: "Furukawa",
+  img: "alyssa",
+  hometown: "Los Angeles, CA",
+  major: "Marketing and Operations",
+  year: "Junior",
+  role: "VP of Internal"
+}, {
+  firstName: "Krzysztof",
+  img: "k",
+  lastName: "Jakubowski",
+  hometown: "Katowice, Poland",
+  major: "Finance and Business Analytics",
+  year: "Senior",
+  role: "VP of Product"
+}, {
+  firstName: "Ryan",
+  lastName: "Boesky",
+  img: "ryan",
+  year: "Senior",
+  role: "Director of Recruitment",
+  hometown: "New York, NY",
+  major: "Philosophy, Politics, and Economics"
+}, {
+  firstName: "Jeffrey",
+  lastName: "Zhou",
+  img: "jeff",
+  year: "Senior",
+  role: "Director of Sales",
+  major: "Computer Science, Finance, and Management",
+  hometown: "Baltimore, MD"
+}, {
+  firstName: "Connor",
+  lastName: "Gibson",
+  img: "connor",
+  year: "Sophomore",
+  role: "Director of Group Development",
+  major: "Strategic Management and Marketing",
+  hometown: "Pittsburgh, PA"
+}, {
+  firstName: "Sophie",
+  img: "sophie",
+  lastName: "Cohen",
+  year: "Junior",
+  role: "Director of Finance",
+  major: "Behavioral Economics",
+  hometown: "Los Angeles, CA"
+}, {
+  firstName: "Shreya",
+  img: "shreya",
+  lastName: "Sisodia",
+  year: "Sophomore",
+  major: "Behavioral Economics",
+  hometown: "Harleysville, PA",
+  role: "Director of Operations"
+}];
+var members = [{
+  firstName: "Eddie",
+  img: "eddie",
+  lastName: "Hammond",
+  hometown: "London, UK",
+  major: "Mechanical Engineering",
+  year: "Senior"
+}, {
+  firstName: "Bob",
+  lastName: "Bailey",
+  img: "bob",
+  year: "Senior",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Franklin Lakes, NJ"
+}, {
+  firstName: "Natalie",
+  lastName: "Kahn",
+  img: "natalie",
+  year: "Senior",
+  major: "Fine Arts",
+  hometown: "New York, NY",
+  role: "Design & Marketing"
+}, {
+  firstName: "Gabe",
+  img: "gabe",
+  lastName: "Barnett",
+  hometown: "New York, NY",
+  major: "Political Science",
+  year: "Senior"
+}, {
+  firstName: "Reza",
+  lastName: "Javaheri",
+  img: "reza",
+  year: "Senior",
+  major: "Economics and Chemistry",
+  hometown: "Needham, MA"
+}, {
+  firstName: "Henry",
+  img: "henry",
+  lastName: "Bliss",
+  year: "Senior",
+  major: "Cognative Science",
+  hometown: "New York, NY"
+}, {
+  firstName: "Gus",
+  img: "gus",
+  lastName: "Owen",
+  year: "Senior",
+  major: "International Studies and Business",
+  hometown: "London, UK"
+}, {
+  firstName: "Katherine",
+  img: "katie",
+  lastName: "Hyland",
+  year: "Junior",
+  major: "Computer Science",
+  hometown: "Chatham, NJ"
+}, {
+  firstName: "Caroline",
+  img: "caroline",
+  lastName: "Riise",
+  year: "Junior",
+  major: "Philosophy, Politics, and Economics",
+  hometown: "Chicago, IL",
+  role: "Content Creation"
+}, {
+  firstName: "Adrian",
+  lastName: "Sherwood",
+  img: "adrian",
+  year: "Sophomore",
+  hometown: "Austin, TX",
+  major: "Finance"
+}, {
+  firstName: "Eliza",
+  img: "eliza",
+  lastName: "Thaler",
+  year: "Sophomore",
+  major: "Real Estate",
+  hometown: "Ardmore, PA",
+  role: "Content Creation"
+}, {
+  firstName: "Karen",
+  img: "karen",
+  lastName: "Yen",
+  year: "Sophomore",
+  major: "Computer Science and Business",
+  hometown: "Freemont, CA"
+}];
+var leave = [{
+  firstName: "Jake",
+  lastName: "Diamond-Reivich"
+}, {
+  firstName: "Leah",
+  lastName: "Ragno"
+}, {
+  firstName: "Morgan",
+  lastName: "Hermann"
+}, {
+  firstName: "Thabo",
+  lastName: "Dhlamini"
+}, {
+  firstName: "Alex",
+  lastName: "Lorenzotti"
+}, {
+  firstName: "Carlo",
+  lastName: "Chiesa"
+}, {
+  firstName: "Dylan",
+  lastName: "Diamond",
+  year: "Junior"
+}, {
+  firstName: "Aaron",
+  lastName: "Brandeis",
+  year: "Senior"
+}, {
+  firstName: "EJ",
+  img: "ej",
+  lastName: "Murphy",
+  year: "Senior"
+}, {
+  firstName: "Vaibhaw",
+  img: "vaibhaw",
+  lastName: "Ladha",
+  year: "Junior"
+}, {
+  firstName: "Max",
+  img: "max",
+  lastName: "Wolman",
+  year: "Senior"
+}, {
+  firstName: "Harrison",
+  img: "harrison",
+  lastName: "Mashaal",
+  year: "Junior"
+}];
+var board = [{
+  name: "Eddie Hammond",
+  role: "Chairman"
+}, {
+  name: "Bob Bailey",
+  role: "Chairman Emeritus"
+}, {
+  name: "Reza Javaheri",
+  role: "Secretary"
+}, {
+  name: "Gabriel Barnett",
+  role: "Treasurer"
+}, {
+  name: "Eva Killenberg"
+}, {
+  name: "Matthew Schnitzer"
+}, {
+  name: "Alyssa Furukawa"
+}, {
+  name: "Krzysztof Jakubowski"
+}, {
+  name: "Ryan Boesky"
+}];
+module.exports = {
+  members: members,
+  management: management,
+  board: board
+};
+
+/***/ }),
+
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _colors_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../colors.js */ "./colors.js");
+/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles.js */ "./styles.js");
+/* harmony import */ var _components_Member__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Member */ "./components/Member.js");
+/* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Project */ "./components/Project.js");
+var _jsxFileName = "/Users/killenberge/mindbank-web/pages/about.js";
+
+
+
+
+
+
+
+
+var members = __webpack_require__(/*! ../member.js */ "./member.js").members;
+
+var management = __webpack_require__(/*! ../member.js */ "./member.js").management;
+
+var About = function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].page,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "has-text-centered",
+    style: {
+      padding: "5%"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hero is-fullheight is-flex",
-    style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].banner,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "is-size-1-desktop is-size-2-tablet is-size-3-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].title,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/full_logo_subtitle.png",
-    width: "70%",
+  }, "ABOUT US"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].subtitle,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoCards, {
+  }, "Read about the history, mission, and vision of MindBank.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].header,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
+  }, "MISSION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      padding: "5%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "is-size-2-fullhd is-size-3-desktop is-size-5-tablet is-size-6-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].bannerText,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "As a student run organization at the University of Pennsylvania, MindBank strives ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    style: {
+      color: _colors_js__WEBPACK_IMPORTED_MODULE_3__["default"].r1
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "to educate its members about the consulting industry"), " through the delivery of innovative, strategic solutions for businesses involved in the campus environment.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-4-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].header,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "HISTORY"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "is-flex",
+    style: {
+      flexDirection: "row"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].redBar,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content",
+    style: {
+      paddingLeft: "3%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-6-mobile",
+    style: _styles_js__WEBPACK_IMPORTED_MODULE_4__["default"].text,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "MindBank was formed by a group of Penn students looking for ways to broaden their academic experience and develop their real-world problem solving skills. They realized that a diverse and interdisciplinary group of students could provide unique value to startups, campus groups, and even established companies looking for advice on how to engage and compete in a collegiate environment. Our focus on the campus environment is the core of MindBank\u2019s pitch and our niche in the consulting space.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), "Since it\u2019s inception, MindBank has grown quickly. We have completed over 32 projects and now have a team of over 20 student consultants. Whether working with large corporations to generate new marketing strategies or teaming up with a campus based startup to improve their business model, MindBank is able to use its unique and diverse insight to help our clients obtain their intended results.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
   }));
-}; // Through targeted research projects and comprehensive surveying we have aggregated a base of data and foundation of understanding of
-// our environment, which we use to make informed and original solutions.
-// Students are best motivated when engaged with real-life challenges and love seeing the
-// impact of their work. So why not immerse them directly into situations with the potential
-// for real impact?
+};
 
-
-var InfoCards =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(InfoCards, _React$Component);
-
-  function InfoCards(props) {
-    var _this;
-
-    _classCallCheck(this, InfoCards);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(InfoCards).call(this, props));
-    _this.state = {
-      hProjects: false,
-      hTeam: false
-    };
-    return _this;
-  }
-
-  _createClass(InfoCards, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          padding: "0 10%"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "columns",
-        style: {
-          margin: "10% 0"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-12",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].card,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        className: "is-size-1-desktop is-size-2-tablet is-size-3-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardTitle,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, "WHO WE ARE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBarHoriz,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "is-size-2-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardText,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, "MindBank is a bright, diverse group of Penn students. We are young women and men studying liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving and a desire to learn and engage."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.hTeam ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            hTeam: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            hTeam: false
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/team",
-        className: "button is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardButton,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }, "Meet the team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-angle-double-right",
-        style: {
-          padding: "2px"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        },
-        __self: this
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "columns is-gapless is-mobile",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-half is-flex",
-        style: {
-          backgroundColor: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].g4,
-          alignItems: "center"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          padding: "8%"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-6-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].bannerText,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        },
-        __self: this
-      }, "We promote ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        },
-        __self: this
-      }, "experiential learning"), " with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        },
-        __self: this
-      }, "tangible impact."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBar,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-half",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        width: "100%",
-        src: "/static/img/gabe.jpg",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          margin: "0 10%"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 82
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "columns",
-        style: {
-          margin: "10% 0"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 83
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-12",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].card,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 84
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        className: "is-size-1-desktop is-size-2-tablet is-size-3-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardTitle,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 85
-        },
-        __self: this
-      }, "WHAT WE DO", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBarHoriz,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 87
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "is-size-2-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardText,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 89
-        },
-        __self: this
-      }, "MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.hProjects ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            hProjects: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            hProjects: false
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 94
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/projects",
-        className: "button is-size-3-fullhd is-size-5-desktop is-size-6-tablet is-size-7-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardButton,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 98
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 99
-        },
-        __self: this
-      }, "See past projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-angle-double-right",
-        style: {
-          padding: "2px"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 100
-        },
-        __self: this
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "columns is-gapless is-mobile",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 106
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-half",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 107
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/img/locust.png",
-        width: "100%",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 108
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "column is-half is-flex",
-        style: {
-          backgroundColor: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].g4,
-          alignItems: "center"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 110
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBar,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 111
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          padding: "8%"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 112
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "is-size-2-fullhd is-size-3-desktop is-size-4-tablet is-size-6-mobile",
-        style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].bannerText,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 113
-        },
-        __self: this
-      }, "We deliver value by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 114
-        },
-        __self: this
-      }, "uncovering insights"), " only available to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          color: _colors_js__WEBPACK_IMPORTED_MODULE_5__["default"].r1
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 114
-        },
-        __self: this
-      }, "campus insiders."))))));
-    }
-  }]);
-
-  return InfoCards;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
@@ -1643,14 +2119,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/about.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! ./pages/about.js */"./pages/about.js");
 
 
 /***/ }),
@@ -1666,17 +2142,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-facebook":
-/*!*********************************!*\
-  !*** external "react-facebook" ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-facebook");
-
-/***/ }),
-
 /***/ "react-pose":
 /*!*****************************!*\
   !*** external "react-pose" ***!
@@ -1689,4 +2154,4 @@ module.exports = require("react-pose");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=about.js.map
