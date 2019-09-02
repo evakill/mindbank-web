@@ -12,6 +12,7 @@ const Square = posed.div({
 
 const Index = () => (
   <div>
+    <RecruitmentModal />
     <Header />
       <div className="hero is-fullheight is-flex" style={styles.banner}>
         <img src="/static/img/full_logo_subtitle.png" width="70%"/>
@@ -26,6 +27,35 @@ const Index = () => (
 // Students are best motivated when engaged with real-life challenges and love seeing the
 // impact of their work. So why not immerse them directly into situations with the potential
 // for real impact?
+
+class RecruitmentModal extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      open: true
+    }
+  }
+
+  render() {
+    return(
+      <div class={this.state.open ? " modal is-active" : "modal"} style={{height: "100%", width: "100%"}}>
+        <div class="modal-background"></div>
+        <div class="modal-content" style={{width: "60%", padding: "5%", textAlign: "center"}}>
+          <h1 class="is-size-2" style={styles.title}> MindBank is recruiting! </h1>
+          <div style={styles.redBarHoriz}></div>
+          <br/>
+          <p style={styles.text}>
+          To apply for a position, please complete <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfEot_2u0KhHSp2jyQmHTg1Zu7NB667rzyBq8TUFxARRBczFQ/viewform">this form</a>. Our recruitment process will include a resume review and two short coffee-chat style interviews. If you have any questions about  MindBank or our recruiting process, please feel free to send us a message on <a target="_blank" href="https://www.facebook.com/pennmindbank/">our Facebook</a>.
+          <br/><br/>
+  We look forward to receiving your application!
+
+          </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onClick={(e)=>this.setState({open:false})}></button>
+      </div>
+    )
+  }
+}
 
 
 
