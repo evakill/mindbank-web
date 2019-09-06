@@ -52,7 +52,7 @@ const Research = () => (
             src="/static/img/events.png"
             name="EVENTS AT PENN"
             date="Fall 2018"
-            question="How can you premote event attendance at Penn?"
+            question="How can you promote event attendance at Penn?"
             insights={["Determining the optimal time to host events for students", "Investigating the factors that compell students to attend events", "How these temporal and behavioral factors differ between paid and free events"]}
             />
         </div>

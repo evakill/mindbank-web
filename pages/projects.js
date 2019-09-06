@@ -55,7 +55,7 @@ const Projects = () => (
         </div>
           <Project
             src="/static/img/kayvon2.png"
-            name="KAYVON ENERPRISES"
+            name="KAYVON ENTERPRISES"
             tagline="Orangizational management for sustained growth."
             company="Kayvon Enterprises is a student startup with multifaceted abmitions in the music, fashion, technology, and real estate industries."
             date="Fall 2018"
