@@ -10,9 +10,11 @@ const Square = posed.div({
   hovered: { scale: 1.03 }
 });
 
+const recruiting = false
+
 const Index = () => (
   <div>
-    <RecruitmentModal />
+    {recruiting ? <RecruitmentModal /> : <div />}
     <Header />
       <div className="hero is-fullheight is-flex" style={styles.banner}>
         <img src="/static/img/full_logo_subtitle.png" width="70%"/>

@@ -1046,24 +1046,31 @@ var Square = react_pose__WEBPACK_IMPORTED_MODULE_1___default.a.div({
     scale: 1.03
   }
 });
+var recruiting = false;
 
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecruitmentModal, {
+  }, recruiting ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecruitmentModal, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
+    },
+    __self: this
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1071,7 +1078,7 @@ var Index = function Index() {
     style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].banner,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1079,19 +1086,19 @@ var Index = function Index() {
     width: "70%",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoCards, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }));
@@ -1132,14 +1139,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "modal-background",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1151,7 +1158,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -1159,27 +1166,27 @@ function (_React$Component) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, " MindBank is recruiting! "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBarHoriz,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].text,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 49
         },
         __self: this
       }, "To apply for a position, please complete ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -1187,27 +1194,27 @@ function (_React$Component) {
         href: "https://docs.google.com/forms/d/e/1FAIpQLSfEot_2u0KhHSp2jyQmHTg1Zu7NB667rzyBq8TUFxARRBczFQ/viewform",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 50
         },
         __self: this
-      }, "this form"), ". Our recruitment process will include a resume review and two short coffee-chat style interviews. If you have any questions about the MindBank or our recruiting process, please feel free to send us a message on ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "this form"), ". Our recruitment process will include a resume review and two short coffee-chat style interviews. If you have any questions about  MindBank or our recruiting process, please feel free to send us a message on ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         target: "_blank",
         href: "https://www.facebook.com/pennmindbank/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 50
         },
         __self: this
       }, "our Facebook"), ".", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }), "We look forward to receiving your application!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1220,7 +1227,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
       }));
@@ -1256,7 +1263,7 @@ function (_React$Component2) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1265,7 +1272,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1275,7 +1282,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1283,7 +1290,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].card,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 78
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1291,14 +1298,14 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardTitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 79
         },
         __self: this
       }, "WHO WE ARE", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBarHoriz,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 81
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1306,7 +1313,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 83
         },
         __self: this
       }, "MindBank is a bright, diverse group of Penn students. We are young women and men studying liberal arts, social sciences, business, and engineering. We come from all parts of the world. We have different political affiliations, religious beliefs, and cultural backgrounds. What we share is a love of problem-solving and a desire to learn and engage."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -1323,7 +1330,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -1332,13 +1339,13 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardButton,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 94
         },
         __self: this
       }, "Meet the team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -1348,14 +1355,14 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 95
         },
         __self: this
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "columns is-gapless is-mobile",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1366,7 +1373,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 102
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1375,7 +1382,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 103
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1383,7 +1390,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].bannerText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 104
         },
         __self: this
       }, "We promote ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1392,7 +1399,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 105
         },
         __self: this
       }, "experiential learning"), " with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1401,21 +1408,21 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 105
         },
         __self: this
       }, "tangible impact."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 108
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "column is-half",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 110
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1423,7 +1430,7 @@ function (_React$Component2) {
         src: "/static/img/gabe.jpg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 111
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1432,7 +1439,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1442,7 +1449,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1450,7 +1457,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].card,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1458,14 +1465,14 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardTitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 117
         },
         __self: this
       }, "WHAT WE DO", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBarHoriz,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 119
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1473,7 +1480,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 121
         },
         __self: this
       }, "MindBank has completed more than twenty projects for businesses, organizations, and individuals. In a collaborative and iterative project cycle, we identify business needs then use our expertise to propose original and informed advice. We focus on quick turn-around times, actionable strategies, and data-driven solutions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -1490,7 +1497,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 126
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -1499,13 +1506,13 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].cardButton,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 131
         },
         __self: this
       }, "See past projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -1515,21 +1522,21 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 132
         },
         __self: this
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "columns is-gapless is-mobile",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 138
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "column is-half",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 139
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1537,7 +1544,7 @@ function (_React$Component2) {
         width: "100%",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 140
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1548,14 +1555,14 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 142
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].redBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 143
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1564,7 +1571,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142
+          lineNumber: 144
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1572,7 +1579,7 @@ function (_React$Component2) {
         style: _styles_js__WEBPACK_IMPORTED_MODULE_6__["default"].bannerText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143
+          lineNumber: 145
         },
         __self: this
       }, "We deliver value by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1581,7 +1588,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 146
         },
         __self: this
       }, "uncovering insights"), " only available to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -1590,7 +1597,7 @@ function (_React$Component2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 146
         },
         __self: this
       }, "campus insiders."))))));
